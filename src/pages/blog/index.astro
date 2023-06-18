@@ -1,0 +1,19 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro'
+import { getCollection } from 'astro:content';
+import BlogItem from '@/components/BlogItem.astro';
+
+const posts = await getCollection('blog');
+---
+
+<MainLayout title='Hieu Nguyen - Blog'>
+  <div class="mb-16">
+    <h1 class="text-4xl mb-4">Blog</h1>
+    <p class="text-xl leading-relaxed">Where I write tech and non-tech related stories, ideas and insights.</p>
+  </div>
+  <div>
+    {posts.sort((a, b) => a.data.publishDate < b.data.publishDate ? 1 : -1).map(post => (
+      <BlogItem post={post} />
+    ))}
+  </div>
+</MainLayout>

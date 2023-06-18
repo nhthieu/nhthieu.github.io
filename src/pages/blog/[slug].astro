@@ -1,0 +1,39 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { getCollection, CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog");
+  return allPosts.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
+const { Content } = await entry.render();
+---
+
+<MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
+  <div class="mb-12">
+    <h1 class="font-bold text-3xl mb-2">{entry.data.title}</h1>
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75">
+        <p>{entry.data.author}</p>
+        <p>{entry.data.publishDate.toLocaleDateString()}</p>
+        <p>&#128218; {entry.data.readingTime} min read</p>
+      </div>
+      <a
+        href="/blog"
+        class="text-dark dark:text-light underline hover:text-dark/75 dark:hover:text-light/75 transition-all duration-200 ease-out"
+        >Back</a
+      >
+    </div>
+  </div>
+
+  <article
+    class="prose-lg dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark"
+  >
+    <Content />
+  </article>
+</MainLayout>
