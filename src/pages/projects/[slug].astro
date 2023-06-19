@@ -3,33 +3,36 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import { getCollection, CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("blog");
+  const allPosts = await getCollection("projects");
   return allPosts.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
+const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
 const { Content } = await entry.render();
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
   <div class="mb-12">
     <h1 class="font-bold text-3xl mb-2 md:text-2xl">{entry.data.title}</h1>
-    <div class="flex items-center justify-between md:flex-col md:items-start md:space-y-4">
+    <div
+      class="flex items-center justify-between md:flex-col md:items-start md:space-y-4"
+    >
       <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
-        <p>{entry.data.author}</p>
+        <!-- <p>{entry.data.}</p>
         <p>•</p>
         <p>{entry.data.publishDate.toLocaleDateString()}</p>
         <p>•</p>
-        <p>{entry.data.readingTime} min read</p>
+        <p>{entry.data.readingTime} min read</p> -->
+        <a href={entry.data.url} target="_blank">&#128279; Visit the project on Github</a>
       </div>
       <a
-        href="/blog"
+        href="/projects"
         class="text-dark dark:text-light underline hover:text-dark/75 dark:hover:text-light/75 transition-all duration-200 ease-out"
-        >Back</a
-      >
+        >Back
+      </a>
     </div>
   </div>
 
@@ -41,11 +44,10 @@ const { Content } = await entry.render();
   </article>
 </MainLayout>
 <script is:inline>
-  window.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('#blogPost a');
-    links.forEach(function(link) {
-      link.setAttribute('target', '_blank');
-    });
+window.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll("#blogPost a");
+  links.forEach(function (link) {
+    link.setAttribute("target", "_blank");
   });
+});
 </script>
-
