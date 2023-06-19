@@ -16,8 +16,8 @@ const { Content } = await entry.render();
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
   <div class="mb-12">
-    <h1 class="font-bold text-3xl mb-2">{entry.data.title}</h1>
-    <div class="flex items-center justify-between">
+    <h1 class="font-bold text-3xl mb-2 md:text-2xl">{entry.data.title}</h1>
+    <div class="flex items-center justify-between md:flex-col md:items-start md:space-y-4">
       <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75">
         <p>{entry.data.author}</p>
         <p>{entry.data.publishDate.toLocaleDateString()}</p>
@@ -32,7 +32,7 @@ const { Content } = await entry.render();
   </div>
 
   <article
-    class="prose-lg dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75"
+    class="prose-lg md:prose-base dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75"
   >
     <Content />
   </article>

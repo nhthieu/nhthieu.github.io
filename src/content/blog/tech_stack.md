@@ -1,7 +1,7 @@
 ---
   title: "The website architecture"
   description: "A brief overview of the website architecture"
-  publishDate: "2021-05-20"
+  publishDate: "2021-05-25"
   readingTime: 7
   category: "tech"
 ---

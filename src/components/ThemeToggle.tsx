@@ -33,7 +33,7 @@ export default function ThemeToggle(props: Props) {
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className="w-10 h-10 p-2 flex items-center justify-center rounded-lg bg-primary dark:bg-primaryDark ">
+      className="w-10 h-10 p-2 flex items-center justify-center rounded-lg bg-primary dark:bg-primaryDark md:w-8 md:h-8">
       {theme === "light" ? <MoonIcon className='w-full fill-light' /> : <SunIcon className='w-full fill-dark' />}
     </button>
   )
