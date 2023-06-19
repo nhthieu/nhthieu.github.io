@@ -34,8 +34,18 @@ const { Content } = await entry.render();
   </div>
 
   <article
-    class="prose-lg md:prose-base dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75"
+    id="blogPost"
+    class="prose-lg md:prose-base dark:text-light prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll dark:prose-pre:bg-light"
   >
     <Content />
   </article>
 </MainLayout>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('#blogPost a');
+    links.forEach(function(link) {
+      link.setAttribute('target', '_blank');
+    });
+  });
+</script>
+
