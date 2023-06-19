@@ -7,14 +7,18 @@ type Props = {
 const { post }: Props = Astro.props;
 ---
 
-<a
-  href=`/blog/${post.slug}`
-  class="hover:opacity-75 transition-all duration-200 ease-out leading-relaxed" 
->
+<div class="mb-4">
+  <a
+    href=`/blog/${post.slug}`
+    class="hover:opacity-75 transition-all duration-200 ease-out leading-relaxed"
+  >
     <h1 class="font-bold text-2xl">{post.data.title}</h1>
-    <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75 pb-2">
+    <div
+      class="flex items-center space-x-4 text-dark/75 dark:text-light/75 pb-2"
+    >
       <p class="">{post.data.publishDate.toLocaleDateString()}</p>
       <p>&#128218; {post.data.readingTime} min read</p>
     </div>
     <!-- <p class="text-lg">{post.data.description}</p> -->
-</a>
+  </a>
+</div>

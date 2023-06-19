@@ -16,14 +16,14 @@ export const SunIcon = ({ className = "", ...rest }) => (
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
-    fill="none"
+    fill="#2a2a2a"
     viewBox="0 0 24 24"
     className={`w-full h-auto ${className}`}
     {...rest}
   >
     <g>
       <path
-        stroke="#ddd"
+        stroke="#2a2a2a"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

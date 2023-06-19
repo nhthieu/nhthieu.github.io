@@ -1,27 +1,27 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
-import { getCollection, CollectionEntry } from "astro:content";
+import type { MarkdownLayoutProps } from "astro";
+import MainLayout from "./MainLayout.astro";
+import TableOfContents from "@/components/TableOfContents.astro";
 
-export async function getStaticPaths() {
-  const allPosts = await getCollection("blog");
-  return allPosts.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
-}
+type Props = MarkdownLayoutProps<{
+  title: string,
+  author: string,
+  publishDate: Date,
+  readingTime: number,
+}>
 
-const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
-const { Content } = await entry.render();
+const {frontmatter, headings} = Astro.props;
+console.log(frontmatter);
 ---
 
-<MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
+<!-- <MainLayout title={`Hieu Nguyen - ${frontmatter.title}`}> -->
   <div class="mb-12">
-    <h1 class="font-bold text-3xl mb-2">{entry.data.title}</h1>
+    <h1 class="font-bold text-3xl mb-2">{frontmatter.title}</h1>
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75">
-        <p>{entry.data.author}</p>
-        <p>{entry.data.publishDate.toLocaleDateString()}</p>
-        <p>&#128218; {entry.data.readingTime} min read</p>
+        <p>{frontmatter.author}</p>
+        <!-- <p>{frontmatter.publishDate.toLocaleDateString()}</p> -->
+        <p>&#128218; {frontmatter.readingTime} min read</p>
       </div>
       <a
         href="/blog"
@@ -30,10 +30,11 @@ const { Content } = await entry.render();
       >
     </div>
   </div>
-
+  <!-- <TableOfContents headings={headings} /> -->
   <article
     class="prose-lg dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75"
   >
-    <Content />
+    <slot />
   </article>
-</MainLayout>
+<!-- </MainLayout> -->
+

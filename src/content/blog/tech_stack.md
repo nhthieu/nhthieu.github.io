@@ -1,12 +1,12 @@
 ---
-  title: "console.log('Hello World!')"
-  description: "A brief overview of the website's tech stack, the motivation behind its creation, and what to expect for the future of the website."
+  title: "The website architecture"
+  description: "A brief overview of the website architecture"
   publishDate: "2021-05-20"
   readingTime: 7
   category: "tech"
 ---
 
-Thanks for tuning in! This is my very first blog post on the website. I will try my best to explain all the moving parts that make it up. And also, I want to take a moment to share the story behind the creation of this website, its purpose, and my motivation for building it.
+
 
 ## Next.js
 

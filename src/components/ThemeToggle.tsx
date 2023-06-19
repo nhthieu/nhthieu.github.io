@@ -1,5 +1,5 @@
 import { signal } from '@preact/signals';
-import { useEffect } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { SunIcon, MoonIcon } from './Icons';
 
 type Props = {}
@@ -7,8 +7,9 @@ const theme = signal(localStorage.getItem("theme") || "light");
 const isMounted = signal(false);
 
 export default function ThemeToggle(props: Props) {
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const toggleTheme = () => {
-    theme.value = theme.value === "light" ? "dark" : "light";
+    setTheme(theme === "light" ? "dark" : "light");
   }
 
   useEffect(() => {
@@ -16,21 +17,24 @@ export default function ThemeToggle(props: Props) {
   }, []);
 
   useEffect(() => {
-    if (theme.value === "dark") {
+    if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-    localStorage.setItem("theme", theme.value);
-  }, [theme.value]);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   if (!isMounted) {
     return null;
   }
 
   return (
-    <button onClick={toggleTheme}>
-      {theme.value === "light" ? <MoonIcon className='w-7 fill-dark'/> : <SunIcon className='w-7 fill-light'/>}
+    <button
+      onClick={toggleTheme}
+      aria-label="Toggle theme"
+      className="w-10 h-10 p-2 flex items-center justify-center rounded-lg bg-primary dark:bg-primaryDark ">
+      {theme === "light" ? <MoonIcon className='w-full fill-light' /> : <SunIcon className='w-full fill-dark' />}
     </button>
   )
 }
