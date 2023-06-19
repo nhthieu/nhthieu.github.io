@@ -22,6 +22,7 @@ const projects = await getCollection("projects");
         <p class="text-dark/75 dark:text-light/75">No current projects.</p> :
         projects
           .filter((project) => project.data.status === "in-progress")
+          .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
           .map((project) => (
             <div class="ml-8">
               <ProjectItem project={project} />
@@ -38,6 +39,7 @@ const projects = await getCollection("projects");
         <p class="text-gray-500">No current projects.</p> :
         projects
           .filter((project) => project.data.status === "completed")
+          .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
           .map((project) => (
             <div class="ml-8">
               <ProjectItem project={project} />

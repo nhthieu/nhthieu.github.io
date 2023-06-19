@@ -3,6 +3,7 @@
   description: "A website that helps healthcare providers manage their patients and their products."
   url: "https://github.com/namhoai1109/Covid-web"
   status: 'completed'
+  sortOrder: 1
 ---
 
 A COVID-19 Web App final project for the Web Development class at HCMUS. The website helps healthcare providers manage their patients and their products.
@@ -11,7 +12,7 @@ A COVID-19 Web App final project for the Web Development class at HCMUS. The web
 
 ## Note
 
-- The backend is hosted on Heroku, which has termninated the free dyno service. However, the backend is still functional and can be used as development environment.
+- The backend is hosted on Heroku, which has terminated the free dyno service. However, the backend is still functional and can be used as development environment.
 - MongoDB Atlas instance has been stopped due to prolonged inactivity.
 
 Sorry :<

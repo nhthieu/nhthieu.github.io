@@ -20,6 +20,7 @@ const projectsCollection = defineCollection({
     description: z.string(),
     url: z.string().url(),
     status: z.enum(['in-progress', 'completed']),
+    sortOrder: z.number().int(),
   })
 });
 
