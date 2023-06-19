@@ -18,10 +18,12 @@ const { Content } = await entry.render();
   <div class="mb-12">
     <h1 class="font-bold text-3xl mb-2 md:text-2xl">{entry.data.title}</h1>
     <div class="flex items-center justify-between md:flex-col md:items-start md:space-y-4">
-      <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75">
+      <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
         <p>{entry.data.author}</p>
+        <p>•</p>
         <p>{entry.data.publishDate.toLocaleDateString()}</p>
-        <p>&#128218; {entry.data.readingTime} min read</p>
+        <p>•</p>
+        <p>{entry.data.readingTime} min read</p>
       </div>
       <a
         href="/blog"

@@ -1,0 +1,27 @@
+---
+import NotFoundLayout from "@/layouts/NotfoundLayout.astro";
+---
+
+<NotFoundLayout title={"Hieu Nguyen - 404"}>
+  <div
+    class="w-full flex flex-col justify-center items-center text-xl min-h-screen"
+  >
+    <div class="flex items-center justify-center space-x-24">
+      <div class="leading-relaxed">
+        <p class="text-3xl font-bold leading-relaxed">404! That's an error.</p>
+        <p class="mb-8 leading-relaxed">
+          The requested URL <span
+            class="text-primary dark:text-primaryDark font-bold"
+            >{Astro.url.pathname}</span
+          > was not found.
+        </p>
+        <a
+          href="/"
+          class="hover:opacity-75 transition-all duration-200 ease-out bg-dark dark:bg-light py-2 px-4 rounded-2xl text-light dark:text-dark font-bold"
+          >Back to home</a
+        >
+      </div>
+      <p class="font-bold text-8xl">&#128549;</p>
+    </div>
+  </div>
+</NotFoundLayout>
