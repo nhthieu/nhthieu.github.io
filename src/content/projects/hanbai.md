@@ -31,14 +31,12 @@ Here is our team, you can connect us through our Linkedin/Github:
 
 ## Features
 
-- CRUD Orders (orders's today, future orders, past orders).
-- CRUD Products.
-- CRUD Clients.
-- Add products type.
-- Add optional attributes for each products.
-- Add photos for clients/products.
-- Calculate the total price of 1 order.
-- Notify user of upcoming orders.
+- CRUD orders (current/upcoming/past orders).
+- CRUD products.
+- CRUD customers.
+- Multiple product types.
+- Optional attributes for each product.
+- Notify customers of upcoming orders.
 - Confirm delivery/payment.
 - Manage list of debtors.
 - Calculate monthly revenue.

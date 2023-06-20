@@ -30,12 +30,11 @@ Here is our team, you can connect us through our Linkedin/Github:
 
 ## Features
 
-- CRUD Orders (orders's today, future orders, past orders).
-- CRUD Dishes.
-- CRUD Clients.
-- Add photos for clients/dishes.
-- Calculate the total price of 1 order.
-- Notify user of upcoming orders.
+- CRUD Orders (current/upcoming/past orders).
+- CRUD dishes.
+- CRUD customers.
+- Add photos for customers/dishes.
+- Notify customers of upcoming orders.
 - Confirm delivery/payment.
 - Calculate monthly revenue.
 - Manage list of debtors.
