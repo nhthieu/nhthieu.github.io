@@ -1,6 +1,8 @@
 ---
+import ArticleLayout from "@/layouts/ArticleLayout.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { getCollection, CollectionEntry } from "astro:content";
+import generateToc from "@/lib/generateToc";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
@@ -11,13 +13,16 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
+// console.log(generateToc(headings)[1]);
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
   <div class="mb-12">
     <h1 class="font-bold text-3xl mb-2 md:text-2xl">{entry.data.title}</h1>
-    <div class="flex items-center justify-between md:flex-col md:items-start md:space-y-4">
+    <div
+      class="flex items-center justify-between md:flex-col md:items-start md:space-y-4"
+    >
       <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
         <p>{entry.data.author}</p>
         <p>•</p>
@@ -28,24 +33,13 @@ const { Content } = await entry.render();
       <a
         href="/blog"
         class="text-dark dark:text-light underline hover:text-dark/75 dark:hover:text-light/75 transition-all duration-200 ease-out"
-        >Back</a
       >
+        Back
+      </a>
     </div>
   </div>
 
-  <article
-    id="blogPost"
-    class="prose-lg md:prose-base sm:prose-sm dark:text-light prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll dark:prose-pre:bg-light prose-img:mx-auto"
-  >
+  <ArticleLayout headings={headings}>
     <Content />
-  </article>
+  </ArticleLayout>
 </MainLayout>
-<script is:inline>
-  window.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('#blogPost a');
-    links.forEach(function(link) {
-      link.setAttribute('target', '_blank');
-    });
-  });
-</script>
-

@@ -1,40 +1,36 @@
 ---
-import type { MarkdownLayoutProps } from "astro";
+import type { MarkdownHeading, MarkdownLayoutProps } from "astro";
 import MainLayout from "./MainLayout.astro";
 import TableOfContents from "@/components/TableOfContents.astro";
 
-type Props = MarkdownLayoutProps<{
-  title: string,
-  author: string,
-  publishDate: Date,
-  readingTime: number,
-}>
+type Props = {
+  headings: MarkdownHeading[];
+};
 
-const {frontmatter, headings} = Astro.props;
-console.log(frontmatter);
+const { headings }: Props = Astro.props;
 ---
 
-<!-- <MainLayout title={`Hieu Nguyen - ${frontmatter.title}`}> -->
-  <div class="mb-12">
-    <h1 class="font-bold text-3xl mb-2">{frontmatter.title}</h1>
-    <div class="flex items-center justify-between">
-      <div class="flex items-center space-x-4 text-dark/75 dark:text-light/75">
-        <p>{frontmatter.author}</p>
-        <!-- <p>{frontmatter.publishDate.toLocaleDateString()}</p> -->
-        <p>&#128218; {frontmatter.readingTime} min read</p>
-      </div>
-      <a
-        href="/blog"
-        class="text-dark dark:text-light underline hover:text-dark/75 dark:hover:text-light/75 transition-all duration-200 ease-out"
-        >Back</a
-      >
-    </div>
-  </div>
-  <!-- <TableOfContents headings={headings} /> -->
-  <article
-    class="prose-lg dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/10 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75"
-  >
-    <slot />
-  </article>
-<!-- </MainLayout> -->
+<TableOfContents headings={headings} className="fixed right-16 2xl:hidden" />
+<article
+  id="blogPost"
+  class="prose-lg md:prose-base sm:prose-sm dark:text-light prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll dark:prose-pre:bg-light prose-img:mx-auto"
+>
+  <!-- {
+      headings.length > 0 && (
+        <>
+          <h3>Table of contents</h3>
+          <TableOfContents headings={headings} className="2xl:hidden" />
+        </>
+      )
+    } -->
+  <slot />
+</article>
 
+<!-- <script is:inline>
+window.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll("#blogPost a");
+  links.forEach(function (link) {
+    link.setAttribute("target", "_blank");
+    });
+  });
+</script> -->

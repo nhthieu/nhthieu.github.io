@@ -1,18 +1,30 @@
 ---
-const { heading } = Astro.props;
+import generateToc from "@/lib/generateToc";
+import TableOfContentsHeading from "./TableOfContentsHeading.astro";
+import type { MarkdownHeading } from "astro";
+
+type Props = {
+  headings: MarkdownHeading[];
+  className: string;
+};
+
+const { headings, className }: Props = Astro.props;
+const toc = generateToc(headings);
 ---
 
-<li>
-  <a href={'#' + heading.slug}>
-    {heading.text}
-  </a>
-  {
-    heading.subheadings.length > 0 && (
-      <ul>
-        {heading.subheadings.map((subheading: any) => (
-          <Astro.self heading={subheading} />
-        ))}
-      </ul>
-    )
-  }
-</li>
+{
+  toc.length > 0 && (
+    <div class={`toc ${className} text-base leading-relaxed `}>
+      <p class="ml-6 font-bold">On this page</p>
+      <nav
+        class={`w-80 border-l-4 border-dark/25 dark:border-light/25 py-2 text-dark/75 dark:text-light/75`}
+      >
+        <ul>
+          {toc.map((heading) => (
+            <TableOfContentsHeading heading={heading} />
+          ))}
+        </ul>
+      </nav>
+    </div>
+  )
+}
