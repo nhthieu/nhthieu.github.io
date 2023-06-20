@@ -17,6 +17,10 @@ const { title }: Props = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Hieu Nguyen's personal website. A place where I showcase my profile and write blogs"
+    />
     <title>{title}</title>
   </head>
   <body
@@ -43,6 +47,6 @@ if (theme === "light") {
   document.documentElement.classList.remove("dark");
 } else {
   document.documentElement.classList.add("dark");
-}
-window.localStorage.setItem("theme", theme);
+  }
+  window.localStorage.setItem("theme", theme);
 </script>
