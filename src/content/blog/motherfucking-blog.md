@@ -21,9 +21,9 @@ You probably build a blog by throwing in a fuck bunch of Wordpress theme slapped
 - The motherfucker's accessible to every asshole that visits your site.
 - Shit's legible and gets your fucking point across.
 
-#### Well guess what motherfucker?
+### Well guess what motherfucker?
 
-You are OVER-DESIGNING. Look at this shit. It's a fucking blog. Why the fuck would you need a page transition with some long-ass animation just to load some content of your *Top 10 coffee shops in town*? You spent hours figuring out how the fuck the library works then fucking stuck every npm package in there just to magically design a hover effect over some useless link, at which some motherfucker might be jabbing on their iPad with fat sausage fingers will never see. Not to mention blind people will never see that shit, but they don't see any of your shitty shit.
+You are over-designing. Look at this shit. It's a fucking blog. Why the fuck would you need a page transition with some long-ass animation just to load some content of your *Top 10 coffee shops in town*? You spent hours figuring out how the fuck the library works then fucking stuck every npm package in there just to magically design a hover effect over some useless link, at which some motherfucker might be jabbing on their iPad with fat sausage fingers will never see. Not to mention blind people will never see that shit, but they don't see any of your shitty shit.
 
 This is your fucking perfect blog. Here's why:
 
