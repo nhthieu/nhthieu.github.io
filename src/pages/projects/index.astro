@@ -15,7 +15,7 @@ const projects = await getCollection("projects");
   </div>
 
   <div class="mb-12">
-    <h1 class="font-bold text-2xl mb-4">Current:</h1>
+    <h1 class="font-bold text-2xl mb-4 md:text-xl">Current:</h1>
     {
       projects
         .filter(project => project.data.status === 'in-progress').length === 0 ?
@@ -32,7 +32,7 @@ const projects = await getCollection("projects");
   </div>
 
   <div>
-    <h1 class="font-bold text-2xl mb-4">Past:</h1>
+    <h1 class="font-bold text-2xl mb-4 md:text-xl">Past:</h1>
     {
       projects
         .filter(project => project.data.status === 'completed').length === 0 ?
