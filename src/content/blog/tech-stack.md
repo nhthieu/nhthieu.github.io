@@ -1,9 +1,10 @@
 ---
-  title: "The website architecture"
+  title: "The Website Architecture"
   description: "A brief overview of the website architecture"
   publishDate: "2021-06-1"
   readingTime: 10
   category: "tech"
+  draft: false
 ---
 
 I've been wanting to build a personal website for a while now. I've had a few attempts in the past, though they were all short-lived and eventually taken down. I think the main reason for this was that I really didn't have a clear idea of what I wanted to do with it. I tried to design the website around a particular theme, but I would always get bored of it after a while (I suck at design by the way).

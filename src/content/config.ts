@@ -5,10 +5,11 @@ const blogCollection = defineCollection({
   schema: z.object({
     title: z.string().max(100),
     publishDate: z.string().transform((str) => new Date(str)),
-    description: z.string(),
+    // description: z.string(),
     readingTime: z.number().int(),
     author: z.string().default('Hieu Nguyen'),
     category: z.string().nullable(),
+    draft: z.boolean()
   })
 });
 

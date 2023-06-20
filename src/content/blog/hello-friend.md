@@ -5,6 +5,7 @@
   publishDate: "2021-05-16"
   readingTime: 1
   category: "casual"
+  draft: false
 ---
 
 *"Hello, friend"*? That's lame. Maybe I should give this blog post a proper name. But *"Hello, friend"*?, that's the second most popular two-word phrase literally every programmer says just behind *"Hello, world"* right? I mean, [he](https://en.wikipedia.org/wiki/Mr._Robot) said it, and it stuck...
