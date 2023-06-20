@@ -13,7 +13,9 @@ Hanbai is an android application that helps online merchants manage orders, cust
 ![Logo](https://user-images.githubusercontent.com/84486806/188899027-bf3eac0a-37cf-4101-a71c-2586e3e4fd86.png)
 
 ## Contributors
-Here is our team, you can connect us through our Linkedin:
+
+Here is our team, you can connect us through our Linkedin/Github:
+
 - [Nguyen Tran Anh Duy (Android Developper)](https://www.linkedin.com/in/duy-nguyen-tran-anh/).
 - [Nguyen Ho Trung Hieu (Android Developper)](https://github.com/nhthieu)
 - [Vu Hoai Nam (Front-end Developper)](https://github.com/namhoai1109)
