@@ -10,19 +10,11 @@ type Props = {
 const { headings }: Props = Astro.props;
 ---
 
-<TableOfContents headings={headings} className="fixed right-16 2xl:hidden" />
+<!-- <TableOfContents headings={headings} className="fixed right-16 2xl:hidden" /> -->
 <article
   id="blogPost"
   class="prose-lg md:prose-base sm:prose-sm dark:text-light prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll dark:prose-pre:bg-light prose-img:mx-auto"
 >
-  <!-- {
-      headings.length > 0 && (
-        <>
-          <h3>Table of contents</h3>
-          <TableOfContents headings={headings} className="2xl:hidden" />
-        </>
-      )
-    } -->
   <slot />
 </article>
 
