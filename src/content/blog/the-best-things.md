@@ -21,6 +21,8 @@
 [Fender Telecaster](https://en.wikipedia.org/wiki/Fender_Telecaster)\
 [Bocchi The Rock](https://en.wikipedia.org/wiki/Bocchi_the_Rock!)\
 [Cá Hồi Hoang](https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang)\
+[Life is Strange](https://en.wikipedia.org/wiki/Life_Is_Strange)\
+[Stardew Valley](https://www.stardewvalley.net/)\
 [Introduction to Algorithms](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)\
 [The Dark Knight](https://en.wikipedia.org/wiki/The_Dark_Knight)\
 [Math Rock](https://en.wikipedia.org/wiki/Math_rock)\
