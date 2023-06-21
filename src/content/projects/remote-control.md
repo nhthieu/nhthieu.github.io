@@ -4,6 +4,7 @@
   url: "https://github.com/nhthieu/RC_Project"
   status: 'completed'
   sortOrder: 4
+  draft: false
 ---
 
 ## Introduction

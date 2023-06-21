@@ -4,6 +4,7 @@
   url: "https://github.com/Anhduy-git/Food-Order-Management"
   status: 'completed'
   sortOrder: 2
+  draft: false
 ---
 
 An outsource Android application for a personal restaurant that helps owner manage products, customers and orders.

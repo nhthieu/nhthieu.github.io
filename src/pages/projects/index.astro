@@ -3,7 +3,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 import ProjectItem from "@/components/ProjectItem.astro";
 
-const projects = await getCollection("projects");
+const projects = await getCollection("projects", ({data}) => {
+  return data.draft !== true;
+});
 ---
 
 <MainLayout title="Hieu Nguyen - Projects">

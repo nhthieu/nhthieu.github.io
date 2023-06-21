@@ -22,6 +22,7 @@ const projectsCollection = defineCollection({
     url: z.string().url(),
     status: z.enum(['in-progress', 'completed']),
     sortOrder: z.number().int(),
+    draft: z.boolean()
   })
 });
 

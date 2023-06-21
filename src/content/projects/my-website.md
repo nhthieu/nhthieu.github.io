@@ -4,6 +4,7 @@
   url: "https://github.com/nhthieu/my-portfolio"
   status: 'in-progress'
   sortOrder: 1
+  draft: false
 ---
 
 Hi, this is my personal website to showcase my profile and my projects. I sometimes write tech and non-tech related blogs on the website too.

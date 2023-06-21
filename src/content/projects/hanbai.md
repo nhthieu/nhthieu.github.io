@@ -4,6 +4,7 @@
   url: "https://github.com/Anhduy-git/Hanbai"
   status: 'completed'
   sortOrder: 3
+  draft: false
 ---
 
 Hanbai is an android application that helps online merchants manage orders, customers list and products list.

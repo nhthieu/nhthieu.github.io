@@ -4,6 +4,7 @@
   url: "https://github.com/namhoai1109/Covid-web"
   status: 'completed'
   sortOrder: 1
+  draft: false
 ---
 
 A COVID-19 Web App final project for the Web Development class at HCMUS. The website helps healthcare providers manage their patients and their products.

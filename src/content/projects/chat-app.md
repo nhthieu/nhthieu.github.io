@@ -4,6 +4,7 @@
   url: "https://github.com/nhthieu/chat_app"
   status: 'completed'
   sortOrder: 5
+  draft: false
 ---
 
 ![Screenshot](../../assets/chat-app-1.png)
