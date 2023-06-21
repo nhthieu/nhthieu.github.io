@@ -17,8 +17,7 @@ module.exports = {
 				light: '#e1e1db',
 				primary: '#003b7a',
 				primaryDark: '#d2991d',
-				proseCode: '#f6f7f6',
-				proseCodeDark: '#414141',
+				blockcode: '#414141',
 			},
 		},
 		screens: {
