@@ -8,10 +8,10 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-        sans: ["Segoe UI", ...defaultTheme.fontFamily.sans],
+        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
       },
 			colors: {
-				dark: '#2a2a2a',
+				dark: '#282828',
 				// dark: "#121212",
 				// headerColor: "#fc7a1e",
 				light: '#e1e1db',
