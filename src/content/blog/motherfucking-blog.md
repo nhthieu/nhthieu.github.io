@@ -13,7 +13,7 @@ And it's fucking perfect.
 
 ### Seriously, what the fuck else do you want?
 
-You probably build a blog by throwing in a fuck bunch of Wordpress theme slapped together by some designer with another fuch bunch of Adobe XD/Adobe AI. You think your heavy-as-fuck carousel library or some useless shitty 13mb effect would get you some fucking eye-catching experience when in fact nobody gives a fuck. Wrong, motherfucker. Let me describe your perfect-ass blog:
+You probably build a blog by throwing in a fuck bunch of Wordpress theme slapped together by some designer with another fuck bunch of Adobe XD/Adobe AI. You think your heavy-as-fuck carousel library or some useless shitty 13mb effect would get you some fucking eye-catching experience when in fact nobody gives a fuck. Wrong, motherfucker. Let me describe your perfect-ass blog:
 
 - Shit's lightweight and loads fast.
 - Fucking fits on all your shitty screens.

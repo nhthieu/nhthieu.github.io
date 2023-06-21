@@ -7,7 +7,7 @@
   draft: false
 ---
 
-I've been wanting to build a personal website for a while now. I've had a few attempts in the past, though they were all short-lived and eventually taken down. I think the main reason for this was that I really didn't have a clear idea of what I wanted to do with it. I tried to design the website around a particular theme, but I would always get bored of it after a while (I suck at design by the way).
+I've been wanting to build a personal website for a while now. I've had a few attempts in the past, though they were all short-lived and eventually taken down. I think the main reason for this was that I really didn't have a clear idea of what I wanted to do with it. I tried to design the website around a particular theme, but I would always get bored of it after a while (I suck at design btw).
 
 This website was supposed to be a side project to put in my resume, in order to develop my skillset and enhance my knowledge, plus I'm pretty free at the time of building the website. However, I decided to take it more seriously and actually put in the time to build and maintain it, and hopefully it will become something that I can be proud of.
 
@@ -17,9 +17,11 @@ I will be giving the overview of all the technologies that went into the making 
 
 I'm not a designer, and I'm not good at it either, as you could probably tell by how modern and sleek this website looks. I'm not gonna lie, it took some time to research what best fits for me. I even tried to sketch out the design, played around with [Figma](https://www.figma.com) a bit and laid down some frames and rectangles just to delete them afterwards.
 
-I love minimalism, the idea of "less is more" really resonates with me. Since I wanted to gear this website towards a more personal and content-driven direction, I decided to go with a minimalistic and simple design (for some it looks boring, but I kinda like it). I've been following this guy - [James Scholz](https://www.youtube.com/@JamesScholz) (he's fricking awesome btw) for quite some time now and only knew he had a [website](https://jvscholz.com/) recently. I mean look at it, it looks beautiful, simple, clean and the important thing is that it gets the point across. Other source of inspiration must definitely be [this one](https://www.alexhughes.dev/), and [this one](https://www.bugswriter.com/) (peak UI btw). The color palette is also inspired by [this website](https://thelinuxcast.org/). 
+I love minimalism, the idea of "less is more" really resonates with me. Since I wanted to gear this website towards a more personal and content-driven direction, I decided to go with a minimalistic and simple design (for some it looks boring, but I kinda like it). I've been following this guy - [James Scholz](https://www.youtube.com/@JamesScholz) (he's fricking awesome btw) for quite some time now and only knew he had a [website](https://jvscholz.com/) recently. I mean look at it, it looks beautiful, simple, clean and the important thing is that it gets the point across. Other source of inspiration must definitely be [this one](https://www.alexhughes.dev/), and [this one](https://www.bugswriter.com/) (peak UI btw). The color palette is also inspired by [this website](https://thelinuxcast.org/).
 
-Yes, I know it's satire but you know what I mean right? They're not fancy, but for me, they're beautiful, and that's enough for me to take inspiration from them and build my website around that idea.
+Yes, I know it's satire but you know what I mean right? They're not fancy, but for me, they're beautiful. I don't really like those fancy websites with a lot of animations and effects, they're just too distracting and I don't think they're necessary. Also, I wanted to just go dark mode all the way at first because I find light mode is too bright and I personally hate it. Though I realized that some people (if there are any) prefer light mode so I decided to do both.
+
+With all that, I think it's enough for me to take inspiration from them and build my website around that idea.
 
 ![Well uhm I dunno](../../assets/tech-stack-1.jpg)
 
