@@ -10,7 +10,7 @@ type Props = {
 const { headings }: Props = Astro.props;
 ---
 
-<!-- <TableOfContents headings={headings} className="fixed right-0 2xl:hidden mr-8 w-72" /> -->
+<TableOfContents headings={headings} className="fixed right-0 2xl:hidden mr-12 w-72" />
 <article
   id="blogPost"
   class="prose-lg md:prose-base sm:prose-sm dark:text-light prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll dark:prose-pre:bg-light prose-img:mx-auto"
@@ -18,11 +18,11 @@ const { headings }: Props = Astro.props;
   <slot />
 </article>
 
-<!-- <script is:inline>
+<script is:inline>
 window.addEventListener("DOMContentLoaded", function () {
   var links = document.querySelectorAll("#blogPost a");
   links.forEach(function (link) {
     link.setAttribute("target", "_blank");
     });
   });
-</script> -->
+</script>

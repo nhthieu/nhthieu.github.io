@@ -10,7 +10,7 @@ Hanbai is an android application that helps online merchants manage orders, cust
 
 ## Logo
 
-![Logo](https://user-images.githubusercontent.com/84486806/188899027-bf3eac0a-37cf-4101-a71c-2586e3e4fd86.png)
+![Logo](../../assets/hanbai-1.png)
 
 ## Contributors
 

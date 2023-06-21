@@ -25,7 +25,7 @@ The website comes with 3 account tiers:
 - Doctor (tier 2 manager)
 - Patient (tier 3 user)
 
-For the detailed functionalities, please refer to the requirements.pdf file for more informations (the file is in Vietnamese, no English version for the moment).
+For the detailed functionalities, please refer to the [requirements.pdf](https://github.com/namhoai1109/Covid-web/blob/main/requirements.pdf) file for more informations (the file is in Vietnamese, no English version for the moment).
 
 Technologies used:
 

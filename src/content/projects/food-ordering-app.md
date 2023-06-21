@@ -10,7 +10,7 @@ An outsource Android application for a personal restaurant that helps owner mana
 
 ## Logo
 
-![Logo](https://user-images.githubusercontent.com/84486806/188896672-ce4230b2-82ce-42b5-920a-2ca7c9211bdf.png)
+![Logo](../../assets/food-order-1.png)
 
 ## Contributors
 
