@@ -15,7 +15,3 @@ I did write a thorough [blog post](/blog/tech-stack) about the technical details
 - Built with Astro and Preact
 - Styled with Tailwind CSS
 - *To come: Blog comments*
-
-## Note
-
-The Github link to the project is currently private, but I will make it public once I finish adjusting the website to my liking.
