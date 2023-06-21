@@ -8,7 +8,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["Segoe UI", ...defaultTheme.fontFamily.sans],
       },
 			colors: {
 				dark: '#2a2a2a',
