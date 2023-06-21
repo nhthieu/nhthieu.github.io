@@ -14,9 +14,11 @@ module.exports = {
 				dark: '#2a2a2a',
 				// dark: "#121212",
 				// headerColor: "#fc7a1e",
-				light: '#dddddd',
+				light: '#e1e1db',
 				primary: '#003b7a',
-				primaryDark: '#d2991d'
+				primaryDark: '#d2991d',
+				proseCode: '#f6f7f6',
+				proseCodeDark: '#414141',
 			},
 		},
 		screens: {

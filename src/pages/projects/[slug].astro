@@ -1,6 +1,6 @@
 ---
-import ArticleLayout from "@/layouts/ArticleLayout.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import Article from "@/components/Article.astro";
 import { getCollection, CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -34,7 +34,7 @@ const { Content, headings } = await entry.render();
     </div>
   </div>
 
-  <ArticleLayout headings={headings}>
+  <Article headings={headings}>
     <Content />
-  </ArticleLayout>
+  </Article>
 </MainLayout>
