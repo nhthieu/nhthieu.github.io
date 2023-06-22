@@ -43,20 +43,24 @@ Technologies used:
 The project comes with a pre-built script file to run all the necessary services.
 
 - For Linux, locate to the project folder and run the following command (make sure to enable execution permission):
-  ```
-  sudo chmod +x run.sh
-  ./run.sh
-  ```
+
+```bash
+sudo chmod +x run.sh
+./run.sh
+```
+  
 - For Windows:
   1.  Locate to client_payment folder
-  2.  Open package.json, find the "script" property and change the "start" property as follows:
-      ```
-      "scripts": {
-          "start": "SET PORT=2000 && react-app-rewired start"
-          // other scripts
-      }
-      ```
-  3.  Locate back to the project folder and run the run.bat file
+  2.  Open package.json, find the "scripts" property and change the "start" property as follows:
+
+```json
+"scripts": {
+    "start": "SET PORT=2000 && react-app-rewired start"
+    // other scripts
+}
+```
+
+  3.  Locate back to the project folder and run the *run.bat* file
 
 ## Database & Accounts
 
@@ -67,24 +71,24 @@ The website currently uses test data to test the functionalities with the follow
 - For Covid System:
 
   - Admin (only 1 account):
-    - username: 000000000
-    - password: admintest
+    - **username:** 000000000
+    - **password:** admintest
   - Doctor (currently 1 account, may be extended):
-    - username: 123456789
-    - password: doctor
+    - **username:** 123456789
+    - **password:** doctor
   - Patient (currently 1 account, may be extended):
-    - username: 111111111
-    - password: patient
+    - **username:** 111111111
+    - **password:** patient
 
 - For Payment System:
   - Admin (only 1 account):
-    - username: 000000000
-    - password: admintest
+    - **username:** 000000000
+    - **password:** admintest
 
 To use a new clean database, do as follows:
 
-1. Locate to the .env file of each system (Covid System: server folder; Payment System: payment_system folder)
-2. Follow the instructions in the .env file to change the database connection string
+1. Locate to the *.env* file of each system (Covid System: server folder; Payment System: payment_system folder)
+2. Follow the instructions in the *.env* file to change the database connection string
 
 ## API Documentations
 

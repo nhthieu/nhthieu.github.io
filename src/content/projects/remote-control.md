@@ -34,7 +34,7 @@ The project is divided into two parts:
 
 Run the following command to install the libraries:
 
-```
+```bash
 pip install -r required.txt
 ```
 
@@ -42,7 +42,7 @@ pip install -r required.txt
 
 - To run the server, locate to the server folder and run the following command:
 
-```
+```bash
 python server.py
 ```
 
@@ -50,7 +50,7 @@ python server.py
 
 - To run the client, locate to the client folder and run the following command:
 
-```
+```bash
 python app.py
 ```
 
@@ -58,8 +58,8 @@ python app.py
 
 ## EXE Build
 
-This project comes with pre-built .exe files for both the server and client.
-If run the .exe file, make sure to unblock the file in the properties.
+This project comes with pre-built *.exe* files for both the server and client.
+If run the *.exe* file, make sure to unblock the file in the properties.
 
 ## Screenshots
 

@@ -12,10 +12,12 @@ const { headings }: Props = Astro.props;
 <!-- <TableOfContents headings={headings} className="fixed right-0 2xl:hidden mr-8 w-72" /> -->
 <article
   id="blogPost"
-  class="prose-base md:prose-sm dark:text-light prose-headings:font-bold prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll  prose-pre:!bg-blockcode dark:prose-pre:!bg-blockcode"
+  class="prose-base md:prose-sm dark:text-light prose-headings:font-bold prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll "
 >
   <slot />
 </article>
+
+<!-- prose-pre:!bg-blockcode dark:prose-pre:!bg-blockcode -->
 
 <script is:inline>
 window.addEventListener("DOMContentLoaded", function () {
@@ -25,3 +27,30 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 </script>
+
+<style is:inline>
+  code {
+    border-radius: 3px;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .dark code {
+    background-color: #414141;
+    color: #f1aa50;
+  }
+
+  :root:not(.dark) code {
+    background-color: #191f26;
+    color: #e1e1db;
+  }
+
+  :root:not(.dark) pre {
+    background-color: #191f26 !important;
+  }
+
+  pre {
+    background-color: #414141 !important;
+  }
+
+</style>
