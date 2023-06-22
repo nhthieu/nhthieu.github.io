@@ -1,5 +1,5 @@
 ---
-  title: "COVID-19 Website"
+  title: "COVID-19 Management Website"
   description: "A website that helps healthcare providers manage their patients and their products."
   url: "https://github.com/namhoai1109/Covid-web"
   status: 'completed'

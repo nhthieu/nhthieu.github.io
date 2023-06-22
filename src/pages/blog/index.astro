@@ -1,21 +1,24 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro'
-import { getCollection } from 'astro:content';
-import BlogItem from '@/components/BlogItem.astro';
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+import BlogItem from "@/components/BlogItem.astro";
+import PageTitle from "@/components/PageTitle.astro";
 
-const posts = await getCollection('blog', ({data}) => {
+const posts = await getCollection("blog", ({ data }) => {
   return data.draft !== true;
 });
 ---
 
-<MainLayout title='Hieu Nguyen - Blog'>
-  <div class="mb-16">
-    <h1 class="text-4xl mb-4 md:text-3xl">Blog</h1>
-    <p class="leading-relaxed">Where I write tech and non-tech related stories, ideas and insights.</p>
-  </div>
+<MainLayout title="Hieu Nguyen - Blog">
+  <PageTitle
+    title="Blog"
+    description="Where I write tech and non-tech related stories, ideas and insights."
+  />
   <div>
-    {posts.sort((a, b) => a.data.publishDate < b.data.publishDate ? 1 : -1).map(post => (
-      <BlogItem post={post} />
-    ))}
+    {
+      posts
+        .sort((a, b) => (a.data.publishDate < b.data.publishDate ? 1 : -1))
+        .map((post) => <BlogItem post={post} />)
+    }
   </div>
 </MainLayout>

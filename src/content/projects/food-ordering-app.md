@@ -1,5 +1,5 @@
 ---
-  title: "Food ordering app"
+  title: "Food Ordering App"
   description: "An android application that helps online food vendors manage orders, customers list and menu."
   url: "https://github.com/Anhduy-git/Food-Order-Management"
   status: 'completed'

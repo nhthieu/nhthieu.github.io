@@ -1,6 +1,6 @@
 ---
-  title: "Remote control"
-  description: "A simple Remote Control project for the Networking Course, implementing socket programming in Python."
+  title: "Remote Control"
+  description: "A simple Remote Control project, implementing socket programming in Python."
   url: "https://github.com/nhthieu/RC_Project"
   status: 'completed'
   sortOrder: 4

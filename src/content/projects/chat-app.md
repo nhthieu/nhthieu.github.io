@@ -1,5 +1,5 @@
 ---
-  title: "Basic chat app"
+  title: "Chat App"
   description: "A basic chat app using React, NodeJS, Socket.io"
   url: "https://github.com/nhthieu/chat_app"
   status: 'completed'
