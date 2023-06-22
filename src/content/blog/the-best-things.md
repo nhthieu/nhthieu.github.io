@@ -1,7 +1,7 @@
 ---
   title: "The Best Things"
   description: "Some things I find beautiful"
-  publishDate: "2021-06-1"
+  publishDate: "2023-06-1"
   readingTime: 1
   category: "casual"
   draft: false

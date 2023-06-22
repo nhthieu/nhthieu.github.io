@@ -1,7 +1,7 @@
 ---
   title: "Motherfucking Blog"
   description: "Motherfucking blog"
-  publishDate: "2021-06-20"
+  publishDate: "2023-06-20"
   readingTime: 5
   category: "tech"
   draft: false

@@ -2,7 +2,7 @@
   # layout: '../../layouts/ArticleLayout.astro'
   title: "Hello, friend!"
   description: "Some words sent from a friend"
-  publishDate: "2021-05-16"
+  publishDate: "2023-05-16"
   readingTime: 1
   category: "casual"
   draft: false
