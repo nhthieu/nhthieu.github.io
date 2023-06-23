@@ -19,7 +19,7 @@ I'm not a designer, and I'm not good at it either, as you could probably tell by
 
 I love minimalism, the idea of "less is more" really resonates with me. Since I wanted to gear this website towards a more personal and content-driven direction, I decided to go with a minimalistic and simple design (for some it looks boring, but I kinda like it). I've been following this guy - [James Scholz](https://www.youtube.com/@JamesScholz) (he's fricking awesome btw) for quite some time now and only knew he had a [website](https://jvscholz.com/) recently. I mean look at it, it looks beautiful, simple, clean and the important thing is that it gets the point across. Other source of inspiration must definitely be [this one](https://www.alexhughes.dev/), and [this one](https://www.bugswriter.com/) (peak UI btw). The color palette is also inspired by [this website](https://thelinuxcast.org/).
 
-Yes, I know it's satire but you know what I mean right? They're not fancy, but for me, they're beautiful. I don't really like those fancy websites with a lot of animations and effects, they're just too distracting and I don't think they're necessary. Also, I wanted to just go dark mode all the way at first because I find light mode is too bright and I personally hate it. Though I realized that some people (if there are any) prefer light mode so I decided to do both.
+Yes, I know it's satire but you know what I mean right? They're not fancy, but for me, they're beautiful. I don't really like those fancy websites with a lot of animations and effects, they're just too distracting and I don't think they're necessary. Also, I wanted to just go dark mode all the way at first because I find light mode is too bright and I personally hate it. Though I realized that some people (if there are any reading this) prefer light mode so I decided to do both.
 
 With all that, I think it's enough for me to take inspiration from them and build my website around that idea.
 
@@ -60,7 +60,7 @@ The moment I decided to use [Tailwind CSS](https://tailwindcss.com/), I knew tha
 ```html
   <article
     id="blogPost"
-    class="prose-lg md:prose-base dark:text-light prose-pre:bg-dark/5 dark:prose-pre:bg-light/75 prose-pre:overflow-x-scroll prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-primaryDark prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-code:bg-dark/25 dark:prose-code:bg-light/25"
+    class="prose-base md:prose-sm dark:text-light prose-headings:font-bold prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll"
   >
 ```
 
@@ -74,10 +74,14 @@ This is a HTML tag from my source code. Beautiful innit?
 
 I was on the fence about what to use for the blog posts. I was thinking about using a CMS (Content Management System) like [Sanity](https://www.sanity.io/), [Contentful](https://www.contentful.com/), or [Prismic](https://prismic.io/). However, I decided to run my blogs on a low-tech solution. It has no CMS, but plain markdown files are parsed to HTML with a bit of restyling using [Tailwind typography](https://tailwindcss.com/docs/typography-plugin) and uploaded to the server. I love the simplicity of markdown files and I think it's more than enough for my needs. Whenever I want to edit or write a new blog post, I just open up a new file and start writing. No need to login, no need to worry about the CMS going down or having updates, and no need to worry about my free-tier account going out of limits! I then push the commits to my Github repository and [Vercel](https://vercel.com/) will automatically build and deploy the website for me. Besides, Astro provides me a built-in content collections I mentioned above, it makes querying and filtering the blog posts a breeze.
 
+![folder structure](../../assets/tech-stack-2.png)
+
+*(updated 20/06/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest.
+
 ## What's next?
 
 I will continue to improve the website and build more projects in the future. Also, I'm planning on adding some more features to the website like:
 
-- Comment section: I'm still not sure about this one since it will require a lot of work to implement and maintain. I'm thinking about using some BaaS (Backend as a Service) for this.
+- Comment section: I'm still not sure about this one since it will require a lot of work to implement and maintain. I'm thinking about using [Firebase](https://firebase.google.com/) or [Pocketbase](https://pocketbase.io/) for this, as I mentioned above. They're [BaaS](https://en.wikipedia.org/wiki/Backend_as_a_service) (Backend as a Service) providers, which means I don't have to worry about the backend and can focus on the frontend instead.
 - Multi-language support: I'm planning on adding Vietnamese support to the website since I'm Vietnamese and I want to share my knowledge with my fellow Vietnamese developers. In addition to that, I know French so I might add support for this language as well in the future. Not rooting for this one though, since I'm not sure if I will be able to maintain the translations. But anyway, fingers crossed!
 - More blog posts: Of course! I'm still learning and exploring new things every day and this time I want to document my journey.
