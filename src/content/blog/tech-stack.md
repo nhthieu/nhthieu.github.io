@@ -58,10 +58,10 @@ I remember the time when I first used vanilla CSS in my projects and let me tell
 The moment I decided to use [Tailwind CSS](https://tailwindcss.com/), I knew that I would never go back to vanilla CSS ever again. Just like its name, it makes your coding experience fast like a wind. Although it does take some time to get the hang of it at first and a long class name in exchange, but it's definitely worth it.
 
 ```html
-  <article
-    id="blogPost"
-    class="prose-base md:prose-sm dark:text-light prose-headings:font-bold prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-li:list-disc prose-pre:overflow-x-scroll"
-  >
+<article
+  id="blogPost"
+  class="prose prose-base md:prose-sm dark:prose-invert max-w-none prose-pre:!bg-codeblock dark:prose-pre:!bg-codeblockDark prose-code:bg-codeblock dark:prose-code:bg-codeblockDark prose-code:text-codeText dark:prose-code:text-codeTextDark prose-hr:border-dark/50 dark:prose-hr:border-light/50 prose-a:text-primary dark:prose-a:text-primaryDark prose-thead:border-dark/50 prose-tr:border-dark/50 dark:prose-thead:border-light/50 dark:prose-tr:border-light/50 prose-blockquote:border-dark/50 dark:prose-blockquote:border-light/50"
+>
 ```
 
 This is a HTML tag from my source code. Beautiful innit?
