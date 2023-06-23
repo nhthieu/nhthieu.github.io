@@ -33,4 +33,3 @@
 [Arch Wiki](https://wiki.archlinux.org/)\
 [This picture](https://drive.google.com/file/d/19d5d_CFwZe2GztCr2KrW4o5j460YE5A0/view?usp=sharing)\
 [and this one](https://drive.google.com/file/d/19ffviGffxN20ZiK8VLrURVstYI5jOMyL/view?usp=sharing)
-

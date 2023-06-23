@@ -15,8 +15,54 @@ module.exports = {
 				light: '#e1e1db',
 				primary: '#003b7a',
 				primaryDark: '#d2991d',
-				blockcode: '#414141',
+				codeblock: '#191f26',
+				codeblockDark: '#414141',
+				codeText: '#e1e1db',
+				codeTextDark: '#f1aa50',
+
 			},
+			typography: ({theme}) => ({
+				DEFAULT: {
+					css: {
+						code: {
+							padding: '0.25rem 0.5rem',
+							borderRadius: '0.25rem',
+						},
+						'code::before': {
+							content: 'none',
+						},
+						'code::after': {
+							content: 'none'
+						},
+						hr: {
+							border: 'dashed 1px',
+						},
+						// '.dark blockquote': {
+						// 	borderLeftColor: theme('colors.light'),
+						// },
+						// ':root:not(.dark) blockquote': {
+						// 	borderLeftColor: theme('colors.dark'),
+						// },
+						':root:not(.dark) li::marker': {
+							color: theme('colors.dark'),
+						},
+						'.dark li::marker': {
+							color: theme('colors.light'),
+						},
+						// 'thead tr': {
+						// 	'border-collapse': 'collapse',
+						// 	border: '1px solid black',
+						// }
+					}
+				},
+				dark: {
+					css: {
+						pre: {
+							backgroundColor: theme('colors.dark'),
+						}
+					}
+				}
+			})
 		},
 		screens: {
 			'2xl': { max: '1535px' },

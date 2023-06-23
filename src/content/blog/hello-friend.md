@@ -19,4 +19,3 @@ Nothing is set in stone yet and I'm still experimenting with different ideas. Bu
 Don't know how to end this blog post so I'm just gonna put a quote from [one of my favorite shows ever](https://en.wikipedia.org/wiki/BoJack_Horseman) here:
 
 > It gets easier. Every day it gets a little easier. But you gotta do it every day, that's the hard part. But it does get easier.
-

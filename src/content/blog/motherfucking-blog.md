@@ -47,8 +47,9 @@ This page has a line-width so reading it on your big-ass 4k OLED monitor doesn't
 
 It's so fucking simple to make sites easier to read. The fact that so many browsers have added a "Reader view" goes to show how badly we've fucked websites for written content. Websites are broken by default, they are functional, high-performing, and accessible, but they're also fucking ugly. You and all the other web designers out there need to make them not total shit.
 
-> You're a fucking moron if you stuff in a shit ton of animations.
-> - Sun Tzu - The art of websites
+> If you use a shit ton of animations, you're gay.
+>
+> - Sun Tzu - The Art of Websites
 
 ### Epilogue
 
