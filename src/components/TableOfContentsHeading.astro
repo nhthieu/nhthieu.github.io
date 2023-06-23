@@ -9,13 +9,13 @@ type Props = {
 const { heading }:Props = Astro.props;
 ---
 
-<li class="ml-5">
+<li>
   <a href={'#' + heading.slug} class="hover:underline">
     {heading.text}
   </a>
   {
     heading.children.length > 0 && (
-      <ul class="">
+      <ul>
         {heading.children.map((subheading: any) => (
           <Astro.self heading={subheading} />
         ))}

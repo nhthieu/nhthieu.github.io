@@ -15,7 +15,7 @@ module.exports = {
 				light: '#e1e1db',
 				primary: '#003b7a',
 				primaryDark: '#d2991d',
-				codeblock: '#191f26',
+				codeblock: '#21262d',
 				codeblockDark: '#414141',
 				codeText: '#e1e1db',
 				codeTextDark: '#f1aa50',
@@ -37,22 +37,12 @@ module.exports = {
 						hr: {
 							border: 'dashed 1px',
 						},
-						// '.dark blockquote': {
-						// 	borderLeftColor: theme('colors.light'),
-						// },
-						// ':root:not(.dark) blockquote': {
-						// 	borderLeftColor: theme('colors.dark'),
-						// },
 						':root:not(.dark) li::marker': {
 							color: theme('colors.dark'),
 						},
 						'.dark li::marker': {
 							color: theme('colors.light'),
 						},
-						// 'thead tr': {
-						// 	'border-collapse': 'collapse',
-						// 	border: '1px solid black',
-						// }
 					}
 				},
 				dark: {

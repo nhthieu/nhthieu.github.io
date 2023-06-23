@@ -76,7 +76,7 @@ I was on the fence about what to use for the blog posts. I was thinking about us
 
 ![folder structure](../../assets/tech-stack-2.png)
 
-*(updated 20/06/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest.
+*(updated 06/20/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest.
 
 ## What's next?
 

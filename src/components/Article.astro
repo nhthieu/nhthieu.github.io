@@ -9,22 +9,13 @@ type Props = {
 const { headings }: Props = Astro.props;
 ---
 
-<!-- <TableOfContents headings={headings} className="fixed right-0 2xl:hidden mr-8 w-72" /> -->
-<!-- <article
-  id="blogPost"
-  class="prose prose-base mx-auto md:prose-sm dark:text-light prose-headings:text-inherit prose-headings:font-bold prose-a:underline prose-a:text-primary dark:prose-a:text-primaryDark prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:border-dark/75 dark:prose-blockquote:border-light/75 prose-ul:list-disc prose-pre:overflow-x-scroll"
->
-  <slot />
-</article> -->
-
 <article
   id="blogPost"
   class="prose prose-base md:prose-sm dark:prose-invert max-w-none prose-pre:!bg-codeblock dark:prose-pre:!bg-codeblockDark prose-code:bg-codeblock dark:prose-code:bg-codeblockDark prose-code:text-codeText dark:prose-code:text-codeTextDark prose-hr:border-dark/50 dark:prose-hr:border-light/50 prose-a:text-primary dark:prose-a:text-primaryDark prose-thead:border-dark/50 prose-tr:border-dark/50 dark:prose-thead:border-light/50 dark:prose-tr:border-light/50 prose-blockquote:border-dark/50 dark:prose-blockquote:border-light/50"
 >
+  <TableOfContents headings={headings} className="" />
   <slot />
 </article>
-
-<!-- prose-pre:!bg-blockcode dark:prose-pre:!bg-blockcode -->
 
 <!-- <script is:inline>
 window.addEventListener("DOMContentLoaded", function () {
