@@ -2,7 +2,7 @@
   title: About Me
 ---
 
-My full name is **Hieu Nguyen Ho Trung**, but feel free to call me **Hieu**, or **Hiu** (like my friends do), or **Tom** (got the name from [this movie](https://en.wikipedia.org/wiki/500_Days_of_Summer)) . I'm a dedicated college student, driven by my passion for programming, technology and a deep curiosity about the ever-evolving world of science. My interests span a broad spectrum of subjects, encompassing everything from technology, programming, science, music, and more.
+My full name is **Hieu Nguyen Ho Trung**, but feel free to call me **Hieu**, or **Hiu** (like my friends do), or **Tom** (got the name from [this movie](https://en.wikipedia.org/wiki/500_Days_of_Summer)). I'm a college student, driven by my passion for programming, technology and a deep curiosity about the ever-evolving world of science. My interests span a broad spectrum of subjects, encompassing everything from technology, programming, science, music, and more.
 
 There's a quote that I really like:
 
@@ -14,7 +14,7 @@ I'm *that guy* who is always eager to explore new things and always tinkering wi
 
 ## Early Years
 
-Born and raised in the beautiful coastal city of [Nha Trang, Vietnam](https://en.wikipedia.org/wiki/Nha_Trang), I was always fascinated by the world of technology. I was introduced to computers at a very young age and I was hooked. I spent most of my childhood tinkering with computers, learning how they work and how to use them. The moment I learned how to print *"Hello World"* on the screen, I knew I held the power to create anything I want, and was hooked on programming ever since.
+Born and raised in the beautiful coastal city of [Nha Trang, Vietnam](https://en.wikipedia.org/wiki/Nha_Trang), I was always fascinated by the world of technology. I was introduced to computers at a very young age and and spent most of my childhood tinkering with them, learning how they work and how to use them. The moment I learned how to print *"Hello World"* on the screen, I knew I held the power to create anything I want, and was hooked on programming ever since.
 
 ![Nha Trang](../../assets/nhatrang.jpg)
 
