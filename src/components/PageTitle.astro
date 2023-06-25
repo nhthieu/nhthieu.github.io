@@ -10,5 +10,5 @@ const { title, description, className }: Props = Astro.props;
 
 <div class={`${className} mb-16`}>
   <h1 class="text-3xl mb-2 md:text-2xl">{title}</h1>
-  <p class="leading-relaxed">{description}</p>
+  {description && <p class="leading-relaxed">{description}</p>}
 </div>
