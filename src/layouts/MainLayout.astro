@@ -47,6 +47,12 @@ if (theme === "light") {
   document.documentElement.classList.remove("dark");
 } else {
   document.documentElement.classList.add("dark");
-  }
-  window.localStorage.setItem("theme", theme);
+}
+window.localStorage.setItem("theme", theme);
 </script>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
