@@ -1,26 +1,29 @@
 ---
-import Hero from '@/components/Hero.astro'
-import MainLayout from '@/layouts/MainLayout.astro'
+import Article from "@/components/Article.astro";
+import Hero from "@/components/Hero.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+import { getEntry } from "astro:content";
+
+const data = await getEntry("info", "welcome");
+const { Content, headings } = await data.render();
 ---
 
-<MainLayout title='Hieu Nguyen - Home'>
+<MainLayout title="Hieu Nguyen - Home">
 	<div class="w-full">
 		<Hero />
 		<section id="about" class="w-full mt-8">
-			<div class="flex flex-col items-start justify-start leading-relaxed">
-				<!-- <h1 class="text-primaryDark text-3xl mb-4">About</h1> -->
-				<p class="mb-6">
-					<span class="font-bold text-primary dark:text-primaryDark">Hi, I'm Hieu Nguyen</span>. I'm an university student / web developer based in Ho Chi Minh City, Vietnam. I'm <span class="italic">that guy</span> who's passionate about web development and always tinkering with ideas and making stuff.
-				</p>
-				
-				<p class="mb-6">
-					My motto is <span class="italic">"I don't know everything, but I can learn anything"</span>. As a developer, I am constantly learning and exploring new technologies and tools to enhance my skillset.
-				</p>
-				<p class="mb-6">
-					I also <a href="/blog" class="text-primary dark:text-primaryDark hover:underline">write</a>. Mostly blogs about tech, life, etc. I also play guitar and I'm a big fan of <a target="_blank" href="https://www.youtube.com/@Mautaus" class="text-primary dark:text-primaryDark hover:underline">this guy</a>.
-				</p>
-				<a href="/cv.pdf" target="_blank" class=" italic hover:underline">&#128279; View my full resume </a>
-				<a href="mailto:nguyenhotrunghieu0106@gmail.com" class=" italic hover:underline">&#128231; Get in touch</a>
+			<Article headings={headings} toc={false}>
+				<Content />
+			</Article>
+
+			<div class="flex flex-col mt-6">
+				<a href="/cv.pdf" target="_blank" class="italic hover:underline"
+					>&#128279; View my full resume
+				</a>
+				<a
+					href="mailto:nguyenhotrunghieu0106@gmail.com"
+					class="italic hover:underline">&#128231; Get in touch</a
+				>
 			</div>
 		</section>
 	</div>
