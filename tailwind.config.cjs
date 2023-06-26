@@ -43,6 +43,12 @@ module.exports = {
 						'.dark li::marker': {
 							color: theme('colors.light'),
 						},
+						// 'root:not(.dark) blockquote': {
+						// 	color: theme('colors.dark'),
+						// },
+						// '.dark blockquote': {
+						// 	color: theme('colors.light'),
+						// },
 					}
 				},
 				dark: {
