@@ -2,7 +2,7 @@
   title: About Me
 ---
 
-My full name is **Hieu Nguyen Ho Trung**, but feel free to call me **Hieu**, or **Hiu** (like my friends do), or **Tom** (got the name from [this movie](https://en.wikipedia.org/wiki/500_Days_of_Summer)). I'm a college student, driven by my passion for programming, technology and a deep curiosity about the ever-evolving world of science. My interests span a broad spectrum of subjects, encompassing everything from technology, programming, science, music, and more.
+My full name is **Hieu Nguyen Ho Trung**, but feel free to call me **Hieu**, or **Hiu** (like my friends do), or **Tom** (got the name from [this movie](https://en.wikipedia.org/wiki/500_Days_of_Summer)). I'm currently a college student, driven by my passion for programming, technology and a deep curiosity about the ever-evolving world of science. My interests span a broad spectrum of subjects, encompassing everything from technology, programming, science, music, and more.
 
 There's a quote that I really like:
 
@@ -12,23 +12,17 @@ There's a quote that I really like:
 
 I'm *that guy* who is always eager to explore new things and always tinkering with ideas and making stuff. I'm a firm believer that anyone can have a solid grasp on anything if they put their mind to it, and I'm always looking for opportunities to learn new things and improve myself.
 
-<!-- ## Early Years
-
-Born and raised in the beautiful coastal city of [Nha Trang, Vietnam](https://en.wikipedia.org/wiki/Nha_Trang), I was always fascinated by the world of technology. I was introduced to computers at a very young age and and spent most of my childhood tinkering with them, learning how they work and how to use them. The moment I learned how to print *"Hello World"* on the screen, I knew I held the power to create anything I want, and was hooked on programming ever since. -->
-
-<!-- ![Nha Trang](../../assets/nhatrang.jpg) -->
-
 ## Education
 
 I'm currently pursuing my dual Bachelor's degree in Information Technology at [Ho Chi Minh University of Science, Vietnam](https://hcmus.edu.vn/) (HCMUS). I enrolled in the [Vietnam-France](https://www.ctda.hcmus.edu.vn/vi/educational-program/chuong-trinh-viet-phap/) program, which is a joint program between HCMUS and [Claude Bernard University Lyon 1, France](https://www.univ-lyon1.fr/), mainly because I love the French language (although I'm not very good at it). I'm currently in my 3rd year of study and I'm expected to graduate in 2024.
 
 ![HCMUS](../../assets/hcmus.jpg)
 
-I can't say that I'm an excellent student but defnitely a dedicated one. I do enjoy learning new things and got the opportunities to meet and work with many talented people. I also got to participate in many interesting projects, events and competitions, which I'm very grateful for.
+I can't say that I'm an excellent student but definitely a dedicated one. I do enjoy learning new things and got the opportunities to meet and work with many talented people at this place. I also got to participate in many interesting projects, events and competitions, which I'm very grateful for.
 
 ## Hobbies
 
-Outside of programming, I'm a huge music lover. I play the guitar, and I also enjoy listening to music, especially rock and math rock. I also enjoy reading books, watching movies, and playing video games in my free time.
+Outside of programming, I play guitar, and I also enjoy listening to music, especially rock and math rock. I also enjoy reading books, watching movies, and playing video games in my free time.
 
 ## Contact with me
 
@@ -56,11 +50,11 @@ Rock and math rock, especially Japanese math rock. I also listen to jazz and cla
 
 ### Favorite programming language?
 
-Definitely not Java.
+I hate every language equally :v
 
 ### Favorite tech gadgets?
 
-A good mechanical keyboard + a good pair of headphones = a happy me.
+A good mechanical keyboard + a good pair of headphones + a good monitor = a happy me.
 
 ### What are you learning at the moment?
 

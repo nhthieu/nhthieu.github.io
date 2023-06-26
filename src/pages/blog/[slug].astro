@@ -17,23 +17,19 @@ const { Content, headings } = await entry.render();
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
   <div class="mb-16">
-    <h1 class="font-bold text-3xl md:text-2xl mb-1">{entry.data.title}</h1>
-    <div
-      class="flex items-center justify-between md:flex-col md:items-start md:space-y-4"
+    <a
+      href="/blog"
+      class="inline-block mb-2 text-dark/75 dark:text-light/75 hover:underline transition-all duration-200 ease-out"
     >
-      <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
-        <p>{entry.data.author}</p>
-        <p>•</p>
-        <p>{entry.data.publishDate.toLocaleDateString()}</p>
-        <p>•</p>
-        <p>{entry.data.readingTime} min read</p>
-      </div>
-      <a
-        href="/blog"
-        class="text-dark dark:text-light underline hover:text-dark/75 dark:hover:text-light/75 transition-all duration-200 ease-out"
-      >
-        Back
-      </a>
+      &#x2190; Back
+    </a>
+    <h1 class="font-bold text-3xl md:text-2xl mb-2">{entry.data.title}</h1>
+    <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
+      <p>{entry.data.author}</p>
+      <p>•</p>
+      <p>{entry.data.publishDate.toLocaleDateString()}</p>
+      <p>•</p>
+      <p>{entry.data.readingTime} min read</p>
     </div>
   </div>
 
