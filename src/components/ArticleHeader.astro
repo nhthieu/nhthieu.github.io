@@ -1,0 +1,40 @@
+---
+type Props = {
+  title: string;
+  contentType: string;
+  author?: string;
+  publishDate?: string;
+  readingTime?: number;
+  url?: string;
+};
+
+const { title, contentType, author, publishDate, readingTime, url }: Props =
+  Astro.props;
+---
+
+<div class="mb-12 leading-relaxed">
+  <a
+    href={contentType === "blog" ? "/blog" : "/projects"}
+    class="inline-block mb-4 text-dark/75 dark:text-light/75 hover:underline"
+  >
+    &#x2190; Back
+  </a>
+  <h1 class="font-bold text-2xl md:text-xl mb-1 text-primary dark:text-primaryDark"># {title}</h1>
+  {
+    contentType === "blog" ? (
+      <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75 text-sm">
+        <p>{author}</p>
+        <p>•</p>
+        <p>{publishDate}</p>
+        <p>•</p>
+        <p>{readingTime} min read</p>
+      </div>
+    ) : (
+      <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
+        <a href={url || "/"} target="_blank">
+          &#128279; Visit the project on Github
+        </a>
+      </div>
+    )
+  }
+</div>

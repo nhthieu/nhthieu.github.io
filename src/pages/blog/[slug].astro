@@ -2,6 +2,7 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import Article from "@/components/Article.astro";
 import { getCollection, CollectionEntry } from "astro:content";
+import ArticleHeader from "@/components/ArticleHeader.astro";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
@@ -16,7 +17,7 @@ const { Content, headings } = await entry.render();
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
-  <div class="mb-16">
+  <!-- <div class="mb-16">
     <a
       href="/blog"
       class="inline-block mb-2 text-dark/75 dark:text-light/75 hover:underline transition-all duration-200 ease-out"
@@ -31,7 +32,14 @@ const { Content, headings } = await entry.render();
       <p>•</p>
       <p>{entry.data.readingTime} min read</p>
     </div>
-  </div>
+  </div> -->
+  <ArticleHeader 
+    title={entry.data.title}
+    contentType="blog"
+    author={entry.data.author}
+    publishDate={entry.data.publishDate.toLocaleDateString()}
+    readingTime={entry.data.readingTime}
+  />
 
   <Article headings={headings}>
     <Content />

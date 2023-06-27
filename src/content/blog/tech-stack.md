@@ -74,9 +74,9 @@ This is a HTML tag from my source code. Beautiful innit?
 
 I was on the fence about what to use for the blog posts. I was thinking about using a CMS (Content Management System) like [Sanity](https://www.sanity.io/), [Contentful](https://www.contentful.com/), or [Prismic](https://prismic.io/). However, I decided to run my blogs on a low-tech solution. It has no CMS, but plain markdown files are parsed to HTML with a bit of restyling using [Tailwind typography](https://tailwindcss.com/docs/typography-plugin) and uploaded to the server. I love the simplicity of markdown files and I think it's more than enough for my needs. Whenever I want to edit or write a new blog post, I just open up a new file and start writing. No need to login, no need to worry about the CMS going down or having updates, and no need to worry about my free-tier account going out of limits! I then push the commits to my Github repository and [Vercel](https://vercel.com/) will automatically build and deploy the website for me. Besides, Astro provides me a built-in content collections I mentioned above, it makes querying and filtering the blog posts a breeze.
 
-![folder structure](../../assets/tech-stack-2.png)
+<!-- ![folder structure](../../assets/tech-stack-2.png)
 
-*(updated 06/20/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest.
+*(updated 06/20/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest. -->
 
 ## What's next?
 
