@@ -8,7 +8,7 @@ import ThemeToggle from "./ThemeToggle";
     <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline'}` href="/">Home</a>
     <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline' }` href="/projects">Projects</a>
     <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline'}` href="/blog">Blog</a>
-    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname === '/about' && 'underline'}` href="/about">About</a>
+    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline'}` href="/about">About</a>
   </div>
     <ThemeToggle client:only/>
 </header>
