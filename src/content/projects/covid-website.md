@@ -18,7 +18,7 @@ A COVID-19 Web App final project for the Web Development class at HCMUS. The web
 
 Sorry :<
 
-## Introduction
+## Overview
 
 The website comes with 3 account tiers:
 

@@ -1,15 +1,15 @@
 ---
-  title: "Chat App"
+  title: "Web Chat App"
   description: "A basic chat app using React, NodeJS, Socket.io"
   url: "https://github.com/nhthieu/chat_app"
   status: 'completed'
-  sortOrder: 5
+  sortOrder: 6
   draft: false
 ---
 
-![Screenshot](../../assets/chat-app-1.png)
-
 This project is a part of my learning process of React, NodeJS and Socket.io. It is not meant to be a full-fledged chat app, but rather a simple one to help me understand the basics of these technologies.
+
+![Screenshot](../../assets/chat-app-1.png)
 
 ## Tech Stack
 
