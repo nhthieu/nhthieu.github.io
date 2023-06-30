@@ -22,7 +22,7 @@ I can't say that I'm an excellent student but definitely a dedicated one. I do e
 
 ## Hobbies
 
-Outside of programming, I play guitar, and I also enjoy listening to music, especially rock and math rock. I also enjoy reading books, watching movies, and playing video games in my free time.
+Outside of programming, I play guitar, and I also enjoy listening to music, especially rock and math rock. I also enjoy reading books and watching animes in my free time.
 
 ## Contact with me
 
@@ -50,7 +50,7 @@ Rock and math rock, especially Japanese math rock. I also listen to jazz and cla
 
 ### Favorite programming language?
 
-I hate every language equally :v
+I hate every language equally.
 
 ### Favorite tech gadgets?
 
