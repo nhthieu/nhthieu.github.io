@@ -3,7 +3,6 @@ import { useEffect, useState } from 'preact/hooks';
 import { SunIcon, MoonIcon } from './Icons';
 
 type Props = {}
-const theme = signal(localStorage.getItem("theme") || "light");
 const isMounted = signal(false);
 
 export default function ThemeToggle(props: Props) {
