@@ -10,7 +10,7 @@ const { project }: Props = Astro.props;
 <div class="mb-6 pb-1 border-b border-baseDark/25 dark:border-baseLight/25">
   <a
     href=`/projects/${project.slug}`
-    class="hover:opacity-75 transition-all duration-200 ease-out leading-relaxed"
+    class="hover:opacity-75 leading-relaxed"
   >
     <h1 class="font-bold text-lg md:text-base">{project.data.title}</h1>
     <p class="">{project.data.description}</p>
