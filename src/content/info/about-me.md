@@ -24,7 +24,7 @@ I can't say that I'm an excellent student but definitely a dedicated one. I do e
 
 Outside of programming, I play guitar and I'm a big fan of [this guy](https://www.youtube.com/@Mautaus). I also enjoy listening to music, especially rock and math rock.
 
-## Contact with me
+## Contact
 
 I don't actively use social media, but I'm most responsive over [email](mailto:nguyenhotrunghieu0106@gmail.com). I also have a [Github account](https://github.com/nhthieu) and a [LinkedIn profile](https://www.linkedin.com/in/nhthieu16/).
 
