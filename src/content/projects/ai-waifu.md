@@ -4,7 +4,7 @@
   url: "https://github.com/nhthieu/ai_waifu"
   status: 'in-progress'
   sortOrder: 2
-  draft: false
+  draft: true
 ---
 
 A project to create a japanese anime waifu using AI, with the goal of creating a virtual assistant.

@@ -11,15 +11,29 @@ module.exports = {
         sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
       },
 			colors: {
-				dark: '#282828',
-				light: '#e1e1db',
-				primary: '#003b7a',
-				primaryDark: '#d2991d',
-				codeblock: '#21262d',
-				codeblockDark: '#414141',
-				codeText: '#e1e1db',
-				codeTextDark: '#f1aa50',
+				// rust
+				// baseLight: '#e1e1db',
+				// textLight: '#262625',
+				// primaryLight: '#003b7a',
+				// codeblockLight: '#21262d',
+				// codeTextLight: '#e1e1db',
+				// baseDark: '#282828',
+				// textDark: '#dddddd',
+				// primaryDark: '#d2991d',
+				// codeblockDark: '#414141',
+				// codeTextDark: '#f1aa50',
 
+				// ayu
+				baseLight: '#fafafa',
+				textLight: '#0f1419',
+				primaryLight: '#3873ad',
+				codeblockLight: '#21262d',
+				codeTextLight: '#e1e1db',
+				baseDark: '#0f1419',
+				textDark: '#c5c5c5',
+				primaryDark: '#39afd7',
+				codeblockDark: '#191f26',
+				codeTextDark: '#ffb454',
 			},
 			typography: ({theme}) => ({
 				DEFAULT: {
@@ -38,10 +52,10 @@ module.exports = {
 							border: 'dashed 1px',
 						},
 						':root:not(.dark) li::marker': {
-							color: theme('colors.dark'),
+							color: theme('colors.textLight'),
 						},
 						'.dark li::marker': {
-							color: theme('colors.light'),
+							color: theme('colors.textDark'),
 						},
 						// 'root:not(.dark) blockquote': {
 						// 	color: theme('colors.dark'),
