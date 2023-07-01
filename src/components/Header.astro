@@ -2,13 +2,13 @@
 import ThemeToggle from "./ThemeToggle";
 ---
 
-<header class="flex items-center justify-between py-8 h-20 mb-16 w-full border-b border-dark/25 dark:border-light/25">
+<header class="flex items-center justify-between py-8 h-20 mb-16 w-full border-b border-baseDark/25 dark:border-baseLight/25">
   <!-- <a href="/" class="text-4xl font-bold mb-4">Hieu's Website</a> -->
   <div class="flex space-x-4">
-    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primary dark:text-primaryDark'}` href="/">Home</a>
-    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primary dark:text-primaryDark' }` href="/projects">Projects</a>
-    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primary dark:text-primaryDark'}` href="/blog">Blog</a>
-    <a class=`hover:text-primary dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primary dark:text-primaryDark'}` href="/about">About</a>
+    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}` href="/">Home</a>
+    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }` href="/projects">Projects</a>
+    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primaryLight dark:text-primaryDark'}` href="/blog">Blog</a>
+    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primaryLight dark:text-primaryDark'}` href="/about">About</a>
   </div>
     <ThemeToggle client:only/>
 </header>

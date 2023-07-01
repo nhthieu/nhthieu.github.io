@@ -17,19 +17,6 @@ const { Content, headings } = await entry.render();
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
-  <!-- <div class="mb-16 md:mb-8">
-    <a
-      href="/projects"
-      class="inline-block mb-2 text-dark/75 dark:text-light/75 hover:underline transition-all duration-200 ease-out"
-      >&#x2190; Back
-    </a>
-    <h1 class="font-bold text-3xl mb-2 md:text-2xl">{entry.data.title}</h1>
-    <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
-      <a href={entry.data.url} target="_blank">
-        &#128279; Visit the project on Github
-      </a>
-    </div>
-  </div> -->
   <ArticleHeader 
     contentType="project"
     title={entry.data.title}

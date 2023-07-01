@@ -20,7 +20,7 @@ const projects = await getCollection("projects", ({data}) => {
     {
       projects
         .filter(project => project.data.status === 'in-progress').length === 0 ?
-        <p class="text-dark/75 dark:text-light/75">No current projects.</p> :
+        <p class="text-textLight/75 dark:text-textDark/75">No current projects.</p> :
         projects
           .filter((project) => project.data.status === "in-progress")
           .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
@@ -37,7 +37,7 @@ const projects = await getCollection("projects", ({data}) => {
     {
       projects
         .filter(project => project.data.status === 'completed').length === 0 ?
-        <p class="text-gray-500">No current projects.</p> :
+        <p class="text-textLight/75 dark:text-textDark/75">No current projects.</p> :
         projects
           .filter((project) => project.data.status === "completed")
           .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
