@@ -22,7 +22,31 @@ const { title }: Props = Astro.props;
       content="Hieu Nguyen's personal website. A place where I showcase my profile and write blogs"
     />
     <title>{title}</title>
+
+    <!-- prevent lightmode flickering -->
+    <script is:inline>
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+      window.localStorage.setItem("theme", theme);
+    </script>
   </head>
+
   <body
     class="bg-baseLight dark:bg-baseDark text-dark dark:text-textDark max-w-2xl mx-auto px-8 text-base md:text-sm sm:px-6"
   >
@@ -31,25 +55,6 @@ const { title }: Props = Astro.props;
     <Footer />
   </body>
 </html>
-
-<script is:inline>
-const theme = (() => {
-  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-    return localStorage.getItem("theme");
-  }
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    return "dark";
-  }
-  return "light";
-})();
-
-if (theme === "light") {
-  document.documentElement.classList.remove("dark");
-} else {
-  document.documentElement.classList.add("dark");
-}
-window.localStorage.setItem("theme", theme);
-</script>
 
 <style is:global>
   html {

@@ -1,19 +1,14 @@
-import { signal } from '@preact/signals';
 import { useEffect, useState } from 'preact/hooks';
 import { SunIcon, MoonIcon } from './Icons';
 
 type Props = {}
-const isMounted = signal(false);
 
 export default function ThemeToggle(props: Props) {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "dark");
+  const [isMounted, setIsMounted] = useState(false);
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   }
-
-  useEffect(() => {
-    isMounted.value = true;
-  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -23,6 +18,10 @@ export default function ThemeToggle(props: Props) {
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   if (!isMounted) {
     return null;
