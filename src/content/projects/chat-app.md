@@ -1,7 +1,7 @@
 ---
-  title: "Web Chat App"
+  title: "web-chat-app"
   description: "A basic chat app using React, NodeJS, Socket.io"
-  url: "https://github.com/nhthieu/chat_app"
+  url: "https://github.com/nhthieu/chat-app"
   status: 'completed'
   sortOrder: 6
   draft: false
