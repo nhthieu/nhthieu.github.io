@@ -1,10 +1,10 @@
 ---
-  title: "java-chat-app"
-  description: "A simple Java chat application supporting concurrent connections."
-  url: "https://github.com/nhthieu/java-chat-app"
+  title: "Java Chat App"
+  description: "A simple multi-threaded chat application supporting concurrent connections."
+  url: "https://github.com/nhthieu/java-chatapp"
   status: 'completed'
   sortOrder: 5
-  draft: true
+  draft: false
 ---
 
 A simple multi-threaded chat application supporting concurrent connections written in Java. This project was done as part of the course work for the module CSC13102 - Java Programming at HCMUS.

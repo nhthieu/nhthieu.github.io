@@ -1,5 +1,5 @@
 ---
-  title: "My Personal Website"
+  title: "Hieu Nguyen's Website"
   description: "The website you're seeing right now."
   url: "https://github.com/nhthieu/my-portfolio"
   status: 'in-progress'
