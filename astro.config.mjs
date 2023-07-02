@@ -2,8 +2,6 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import preact from "@astrojs/preact";
 
-import markdoc from "@astrojs/markdoc";
-
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -12,5 +10,5 @@ export default defineConfig({
   experimental: {
     assets: true
   },
-  integrations: [tailwind(), preact(), markdoc()]
+  integrations: [tailwind(), preact()]
 });
