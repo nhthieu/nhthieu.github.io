@@ -1,7 +1,7 @@
 ---
-  title: "Remote Control"
-  description: "A simple Python application that can manipulate target computer within the same network."
-  url: "https://github.com/nhthieu/RC_Project"
+  title: "py-rus"
+  description: "A simple Python application that can control target computer within the same network."
+  url: "https://github.com/nhthieu/py-rus"
   status: 'completed'
   sortOrder: 4
   draft: false
