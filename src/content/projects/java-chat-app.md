@@ -1,7 +1,7 @@
 ---
   title: "Java Chat App"
   description: "A simple multi-threaded chat application supporting concurrent connections."
-  url: "https://github.com/nhthieu/java-chatapp"
+  url: "https://github.com/nhthieu/java-chat-app"
   status: 'completed'
   sortOrder: 5
   draft: false
