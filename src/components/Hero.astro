@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
-import profilePicture from "@/assets/ryou-hi.jpg";
+import profilePicture from "@/assets/ryou-hi-compressed.jpg";
 ---
 
 <section id="hero">
   <div class="flex flex-col items-center justify-center">
     <Image
       format="avif"
-      quality="mid"
+      quality="low"
       src={profilePicture}
       alt="profile picture"
       class="rounded-full h-40 w-40 object-cover border-4 border-solid border-primaryLight dark:border-primaryDark md:h-36 md:w-36"
