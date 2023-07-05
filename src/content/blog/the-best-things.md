@@ -1,6 +1,6 @@
 ---
-  title: "The Best Things"
-  description: "Some things I find beautiful"
+  title: "Things I find beautiful"
+  description: "Things I find beautiful"
   publishDate: "2023-06-1"
   readingTime: 1
   category: "casual"
@@ -12,6 +12,7 @@
 [ソラニン](https://en.wikipedia.org/wiki/Solanin)\
 [ソラニン - Akfg](https://www.youtube.com/watch?v=xZD1B1TskXs)\
 [Nếu biết trăm năm là hữu hạn](https://www.reader.com.vn/review-sach-neu-biet-tram-nam-la-huu-han-a39.html)\
+[For People Feeling Behind In Life](https://www.youtube.com/watch?v=eac-_ys_f_Q)\
 [Why Do Science](https://www.youtube.com/watch?v=WdSerqgb-d0)\
 [Why](https://www.youtube.com/watch?v=36GT2zI8lVA&t=56s)\
 [Message to Future Generations](https://www.youtube.com/watch?v=ihaB8AFOhZo)\

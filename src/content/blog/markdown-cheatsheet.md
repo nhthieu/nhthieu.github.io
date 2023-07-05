@@ -2,7 +2,7 @@
   title: "Markdown Cheatsheet"
   description: "A cheatsheet for markdown syntax, including extended syntax."
   publishDate: "2023-06-23"
-  readingTime: 3
+  readingTime: 2
   category: "tech"
   draft: false
 ---
