@@ -16,8 +16,6 @@ I'm a firm believer that anyone can have a solid grasp on anything if they put t
 
 I'm currently pursuing my dual Bachelor's degree in Information Technology at [Ho Chi Minh University of Science, Vietnam](https://hcmus.edu.vn/) (HCMUS). I enrolled in the [Vietnam-France](https://www.ctda.hcmus.edu.vn/vi/educational-program/chuong-trinh-viet-phap/) program, which is a joint program between HCMUS and [Claude Bernard University Lyon 1, France](https://www.univ-lyon1.fr/), mainly because I love the French language (although I'm not very good at it). I'm currently in my 3rd year of study and I'm expected to graduate in 2024.
 
-<!-- ![HCMUS](../../assets/hcmus.jpg) -->
-
 I can't say that I'm an excellent student but definitely a dedicated one. I do enjoy learning new things and got the opportunities to meet and work with many talented people at this place. I also got to participate in many interesting projects, events and competitions, which I'm very grateful for.
 
 ## Hobbies
@@ -32,7 +30,7 @@ I don't actively use social media, but I'm most responsive over [email](mailto:n
 
 ### MBTI type?
 
-I don't believe in MBTI or any other personality tests, but sure, I'm an INFJ. I'm also a Gemini, if you're into astrology (I'm not).
+I don't believe in MBTI or any other personality tests, but sure, I'm an [INFJ](https://www.16personalities.com/infj-personality). I'm also a Gemini, if you're into astrology (I'm not).
 
 ### Favorite music genre?
 
