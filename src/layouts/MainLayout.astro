@@ -57,7 +57,37 @@ const { title }: Props = Astro.props;
 </html>
 
 <style is:global>
-  html {
+  /* html {
     scroll-behavior: smooth;
+  } */
+
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #fafafa;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background-color: #0f1419;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #aaa8a8;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #3b3d3f;
+    /* border-radius: 2px; */
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #807e7e;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:active {
+    background: #535353;
+    /* border-radius: 2px; */
   }
 </style>
