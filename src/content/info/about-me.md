@@ -18,6 +18,16 @@ I'm currently pursuing my dual Bachelor's degree in Information Technology at [H
 
 I can't say that I'm an excellent student but definitely a dedicated one. I do enjoy learning new things and got the opportunities to meet and work with many talented people at this place. I also got to participate in many interesting projects, events and competitions, which I'm very grateful for.
 
+## Work Experience
+
+Although I don't have any prior professional experience, I have been fortunate to collaborate with many talented individuals on various projects.
+
+In late 2021, I worked on a **Diner Management Application** for a small personal diner as a freelance project. I was part with a small team of four people, and my responsibilities included designing and implementing the database schema for the application, as well as implementing the backend with native Java using Android Studio with integration of SQLite database.
+
+Following that, I participated in the [Pencil Philosophy Coding Contest](https://triethocbutchi.com/), which was a 3-month long coding contest for students in Vietnam. I worked with a team of 4 people to build a Shopee-like product management/ordering application for a small business. My role involved designing and implementing the database schema for the application, as well as implementing daily and monthly revenue reports.
+
+At the moment, I'm actively looking for internship opportunities to gain more experience and enhance my skills. I really do hope to secure one in the near future so I can update this section with something more, you know, professional ([sadge](https://www.streamscheme.com/wp-content/uploads/2022/02/sadge-600.png.webp)).
+
 ## Hobbies
 
 Outside of programming, I play guitar and I'm a big fan of [this guy](https://www.youtube.com/@Mautaus). I also enjoy listening to music, especially rock and math rock.

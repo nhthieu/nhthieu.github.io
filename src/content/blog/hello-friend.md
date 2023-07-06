@@ -1,5 +1,4 @@
 ---
-  # layout: '../../layouts/ArticleLayout.astro'
   title: "Hello, friend!"
   description: "Some words sent from a friend"
   publishDate: "2023-05-16"
