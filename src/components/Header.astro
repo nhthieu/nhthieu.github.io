@@ -1,14 +1,35 @@
 ---
 import ThemeToggle from "./ThemeToggle";
+
+type Props = {
+  className?: string;
+};
+
+const { className }: Props = Astro.props;
 ---
 
-<header class="flex items-center justify-between h-20 mb-12 w-full border-baseDark/25 dark:border-baseLight/25">
-  <!-- <a href="/" class="text-4xl font-bold mb-4">Hieu's Website</a> -->
-  <div class="flex space-x-4">
-    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}` href="/">Home</a>
-    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }` href="/projects">Projects</a>
-    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primaryLight dark:text-primaryDark'}` href="/blog">Blog</a>
-    <a class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primaryLight dark:text-primaryDark'}` href="/about">About</a>
+<header
+  class="h-20 mb-12 w-full border-baseDark/10 dark:border-baseLight/10"
+>
+  <div class={`${className} flex items-center justify-between mx-auto pt-6`}>
+    <div class="flex space-x-4">
+      <a
+        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}`
+        href="/">Home</a
+      >
+      <a
+        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }`
+        href="/projects">Projects</a
+      >
+      <a
+        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primaryLight dark:text-primaryDark'}`
+        href="/blog">Blog</a
+      >
+      <a
+        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primaryLight dark:text-primaryDark'}`
+        href="/about">About</a
+      >
+    </div>
+    <ThemeToggle client:only />
   </div>
-    <ThemeToggle client:only/>
 </header>
