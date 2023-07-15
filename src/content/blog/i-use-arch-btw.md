@@ -19,15 +19,17 @@ I knew of Arch probably because of the [memes](https://www.youtube.com/watch?v=D
 
 ## Minimal Installation
 
-Let's be honest, have you ever looked at the System Monitor and wondered why your Windows CPU usage was so high? Or, when you opened the Applications and saw all these pre-installed apps/packages that you don't even use? I have, and it's annoying. They take up space, and they're just there, doing nothing. Arch is a minimal distro, which means it's up to the user to decide what packages to install. Hell, even the installation process is minimal. It's just a simple TTY and that's it.
+Let's be honest, have you ever looked at the System Monitor and wondered why your Windows CPU usage was so high? Or, when you opened the Applications and saw all these pre-installed apps/packages that you don't even use? I have, and it's annoying. They take up space, and they're just there, doing nothing. Arch is a minimal distro, which means it's up to the user to decide what packages to install. Hell, even the installation process is minimal. It's just the [tty](https://en.wikipedia.org/wiki/Tty_(Unix)) and that's it.
 
 ![install](../../assets/arch-install.png)
 
 Luckily, it comes with the `archinstall` script which makes the installation process so much easier, and it's pretty straightforward to follow. It does the heavy lifting for you, like the bootloader, networking, audio and video drivers. Still, it's required to manually partition the drives, and install the essential packages for later usage, which I wouldn't have learned if I just used the GUI installer.
 
-Right off the installation, what you get is a barebones system with just the essential packages installed, a lot more barebones than I was used to with Ubuntu or Debian. Everything after that point is the second and onward parts bags, all of the additional media codecs, supporting applications, and things that most distributions such as Ubuntu or Fedora have off the rip, you have to add on yourself. I prefer it this way since I can choose what packages to install, no bloatwares whatsoever, just a clean system with minimal overhead and without unnecessary additions or modifications. 
+Right off the installation, what you get is a barebones system with just the essential packages installed, a lot more barebones than I was used to with Ubuntu or Debian. Everything after that point is the second and onward parts bags, all of the additional media codecs, supporting applications, and things that most distributions such as Ubuntu or Fedora have off the rip, you have to add on yourself. I prefer it this way since I can choose what packages to install, no bloatwares whatsoever, just a clean system with minimal overhead and without unnecessary additions or modifications.
 
-![clean](../../assets/arch.png)
+And of course, the [rice](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary/#wiki_rice).
+
+![rice](../../assets/arch.png)
 
 ## The Arch Wiki
 
@@ -43,6 +45,6 @@ Another best things about Arch is the AUR (Arch User Repository). It's a communi
 
 At the end of the day, Arch or any distro is just a tool, and as long as you feel comfortable, have fun, and it helps you with your work, then it's the best distro. I like Arch because it is what I want it to be. It's minimal, fast and reliable. Being able to dig in the system configurations and customize it to my liking helps me learn more about Linux, and I think that's the beauty of Arch. It also helps me build this mindset of figuring things out on my own, learning to be comfortable with being uncomfortable fixing and exploring things that I don't know, and to be honest, isn't that what programming is all about? - the fact that you learn something new everyday, and you learn as you go.
 
-The chance of breakage is non-zero but the seas have been smooth sailing, and I'm enjoying the ride. 
+The chance of breakage is non-zero but the seas have been smooth sailing, and I'm enjoying the ride. Was it worth it to switch? Probably. Probably not. But I don’t care. I had fun. Sometimes we do things because it’s useful to do them. Sometimes we do things because we like doing them. It’s important to know the difference. This was fun.
 
 Oh, I use Arch btw.
