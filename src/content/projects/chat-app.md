@@ -3,8 +3,8 @@
   description: "A basic chat app using React, NodeJS, Socket.io"
   url: "https://github.com/nhthieu/chat-app"
   status: 'completed'
-  sortOrder: 6
-  draft: false
+  sortOrder: 7
+  draft: true
 ---
 
 This project is a part of my learning process of React, NodeJS and Socket.io. It is not meant to be a full-fledged chat app, but rather a simple one to help me understand the basics of these technologies.

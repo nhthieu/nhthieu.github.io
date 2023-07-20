@@ -1,13 +1,13 @@
 ---
   title: "Hanbai"
-  description: "Hanbai is an android application that helps online merchants manage orders, customers list and products list."
+  description: "Hanbai is an Android application that helps online merchants manage orders, customers list and products list."
   url: "https://github.com/Anhduy-git/Hanbai"
   status: 'completed'
-  sortOrder: 3
+  sortOrder: 2
   draft: false
 ---
 
-Hanbai is an android application that helps online merchants manage orders, customers list and products list.
+Hanbai is an Android product managing/ordering application that helps online merchants manage orders, list of customers and products. This project was done as the competition project for the Pencil Philosophy Coding Contest in 2022.
 
 ## Logo
 
@@ -36,9 +36,8 @@ Here is our team, you can connect us through our Linkedin/Github:
 - CRUD products.
 - CRUD customers.
 - Multiple product types.
-- Optional attributes for each product.
 - Notify customers of upcoming orders.
 - Confirm delivery/payment.
 - Manage list of debtors.
-- Calculate monthly revenue.
-- Sales statistics on the chart.
+- Monthly revenue.
+- Sales statistics with chart.

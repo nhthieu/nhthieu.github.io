@@ -1,13 +1,13 @@
 ---
   title: "Covid-19 Website"
-  description: "A Covid-19 web application that helps healthcare providers manage their patients and their products."
+  description: "A Covid-19 web application that helps healthcare providers manage patient data and related necessities."
   url: "https://github.com/namhoai1109/Covid-web"
   status: 'completed'
-  sortOrder: 1
+  sortOrder: 3
   draft: false
 ---
 
-A COVID-19 Web App final project for the Web Development class at HCMUS. The website helps healthcare providers manage their patients and their products.
+A COVID-19 Web App final project for the Web Development class at HCMUS. The website helps healthcare providers manage patient data and related necessities such as medicine, medical equipment, etc.
 
 ![Covid-19 Website](../../assets/covid-website-1.png)
 
@@ -20,18 +20,28 @@ Sorry :<
 
 ## Overview
 
-The website comes with 3 account tiers:
+The project comes with 2 backend systems:
 
-- Admin (tier 1)
-- Doctor (tier 2 manager)
-- Patient (tier 3 user)
+- Covid System: the main backend system that handles all the functionalities of the website.
+- Payment System: a backend system that handles payment functionalities, providing payment APIs with OAuth protocol.
 
-For the detailed functionalities, please refer to the [requirements.pdf](https://github.com/namhoai1109/Covid-web/blob/main/requirements.pdf) file for more informations (the file is in Vietnamese, no English version for the moment).
+Some notable functionalities of the website:
 
-Technologies used:
+- Manage COVID-19 patients data, this included handling patient's medical records, medicine.
+- Handle patient's status (F0, F1, F2, etc.) and related people who have been in contact with the patient.
+- Manage medicine, necessary medical equipment.
+- Manage facilities for COVID-19 treatment.
+- Statistics such as number of patients in each status per unit of time, debts and payments, etc.
+- Minimum payment threshold for patients with push notifications.
+- Authentication/Authorization with JWT.
+- SSL connection to payment system (emulated) with OAuth protocol.
+
+For the detailed functionalities, please refer to the [requirements.pdf](/public/covid-requirements.pdf). The file is written in Vietnamese.
+## Tech stack
 
 - Front-end: React.js
-- Back-end: Node.js, Express.js, MongoDB
+- Back-end: Express, MongoDB, Mongooose, JWT, OAuth
+- API: Postman
 
 ## Prerequisites
 
@@ -64,6 +74,12 @@ sudo chmod +x run.sh
 
 ## Database & Accounts
 
+The website comes with 3 account tiers:
+
+- Admin (tier 1)
+- Doctor (tier 2 manager)
+- Patient (tier 3 user)
+
 The website uses MongoDB as the database to store all the data. The database is hosted on MongoDB atlas and can be access through the Internet.
 
 The website currently uses test data to test the functionalities with the following accounts:
@@ -93,7 +109,8 @@ To use a new clean database, do as follows:
 ## API Documentations
 
 Newly added SwaggerUIExpress and SwaggerAutoDocGen, auto generate docs for APIs following OpenAPI standard, available at /doc
-## Contribution
+
+## Contributions
 
 Special thanks to the following people for their contribution:
 

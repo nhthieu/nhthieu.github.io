@@ -9,7 +9,7 @@
 
 I love Ubuntu, and had been using it for a long time since I started my Linux journey. I love the stability, the ease of use, the package manager, and the community. However, ever since Canonical's decision to move commonly used applications, like the web browsers, exclusively to Snap packages and the additional overhead that came with those being containerized instead of just running on the bare metal was ultimately my reason for ditching Ubuntu. It just leaves a bad impression on me.
 
-I then began distro-hopping to find an alternative, and it sort of became a hobby of mine to try out different distros. I tried Mint, hopped to Debian for a while for my projects, stayed on Fedora for its Flatpak support and "cutting edge" packages for the last couple of months. Though, due to the recent Red Hat [drama](https://www.youtube.com/watch?v=kF5pyVUQBH8&t=279s) that's been going on in the Linux community, I started to have second thoughts. Don't get me wrong, I'm not a Linux elitist to be giving out these opinions, I just want to use a distro that I can trust and not have to worry about all the fuss behind it.
+I then began distro-hopping to find an alternative, and it sort of became a hobby of mine to try out different distros. I tried Mint, hopped to Debian for a while for my projects, stayed on Fedora for its Flatpak support and "cutting edge" packages for the last couple of months. Though, due to the recent Red Hat [drama](https://www.youtube.com/watch?v=kF5pyVUQBH8) that's been going on in the Linux community, I started to have second thoughts. Don't get me wrong, I'm not a Linux elitist to be giving out these opinions, I just want to use a distro that I can trust and not have to worry about all the fuss behind it.
 
 ## I use Arch btw
 
@@ -23,7 +23,7 @@ Let's be honest, have you ever looked at the System Monitor and wondered why you
 
 ![install](../../assets/arch-install.png)
 
-Luckily, it comes with the `archinstall` script which makes the installation process so much easier, and it's pretty straightforward to follow. It does the heavy lifting for you, like the bootloader, networking, audio and video drivers. Still, it's required to manually partition the drives, and install the essential packages for later usage, which I wouldn't have learned if I just used the GUI installer.
+Though lucky for us, it comes with the `archinstall` script which makes the installation process so much easier, and it's pretty straightforward to follow. It does the heavy lifting for you, like the bootloader, networking, audio and video drivers. Still, it's required to manually partition the drives, and install the essential packages for later usage, which I wouldn't have learned if I just used the GUI installer.
 
 Right off the installation, what you get is a barebones system with just the essential packages installed, a lot more barebones than I was used to with Ubuntu or Debian. Everything after that point is the second and onward parts bags, all of the additional media codecs, supporting applications, and things that most distributions such as Ubuntu or Fedora have off the rip, you have to add on yourself. I prefer it this way since I can choose what packages to install, no bloatwares whatsoever, just a clean system with minimal overhead and without unnecessary additions or modifications.
 

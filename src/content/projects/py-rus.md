@@ -3,7 +3,7 @@
   description: "A simple Python application that can control target computer within the same network."
   url: "https://github.com/nhthieu/py-rus"
   status: 'completed'
-  sortOrder: 4
+  sortOrder: 5
   draft: false
 ---
 

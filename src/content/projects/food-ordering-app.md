@@ -1,13 +1,13 @@
 ---
   title: "Food Ordering App"
-  description: "An android application that helps online food vendors manage orders, customers list and menu."
+  description: "An outsource Android management application for a personal diner."
   url: "https://github.com/Anhduy-git/Food-Order-Management"
   status: 'completed'
-  sortOrder: 2
+  sortOrder: 1
   draft: false
 ---
 
-An outsource Android application for a personal restaurant that helps owner manage products, customers and orders.
+An outsource Android application for a personal diner/restaurant that helps owner manage products, customers and orders.
 
 ## Logo
 
