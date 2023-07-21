@@ -9,10 +9,16 @@
 
 Hi, this is my personal website to showcase my profile and my projects. I sometimes write tech and non-tech related blogs on the website too.
 
-I did write a [blog post](/blog/tech-stack) about the technical details of the website, so feel free to check it out.
+I did write a [blog post](/blog/tech-stack) about the technical details of the website, feel free to check it out.
 
-**Some of the features include:**
+## Tech stack
 
-- Built with Astro and Preact
-- Styled with Tailwind CSS
-- [ ] To come: blog comments, i18n, gallery section
+- Astro
+- Preact
+- Tailwind
+
+## TODO
+
+- [x] i18n support
+- [ ] Add BaaS support (Firebase or Pocketbase) for blog comments
+- [ ] Gallery section

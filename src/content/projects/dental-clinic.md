@@ -7,7 +7,7 @@
   draft: false
 ---
 
-A SQL Server database management system project focuses on database designing and optimizing queries. This project is done as the final project for the module CSC12002 - Database Management System at HCMUS.
+A SQL Server project focuses on database designing and database tuning and/or queries optimization. This project is done as the final project for the module CSC12002 - Advanced Database at HCMUS.
 
 ## Note
 
@@ -28,14 +28,21 @@ The project focuses on the detailed design of a database with real-world require
 - Physical implementation exclusively in MSSQL Server, this includes implementing the database, writing stored procedures, triggers, functions, authentication/authorization, etc.
 - Optimizing, testing and benchmarking performance.
 
-Moreover, the project also includes documents regarding these processes and will be updated as the project progresses.
+All the schemas designed for the project will also be included in the repo. Moreover, the project also includes documents regarding these processes and will be updated as the project progresses.
 
 ## Tech stack
 
 This project will be built into a web application with the following tech stack (planning):
 
 - Database: MSSQL Server
-- Back-end: Go, Gin, GORM, JWT
+- Backend: Go, Gin, GORM, JWT
 - Frontend: Next, Tailwind.
 - API: Swagger, Postman.
 
+## Contributions
+
+Special thanks to the member of our team:
+
+- [Nam Vu Hoai](https://github.com/namhoai1109)
+- [Trung Thieu Vinh](https://github.com/tvtrungg)
+- [Man Huynh Nguyen](https://github.com/nhman2002)
