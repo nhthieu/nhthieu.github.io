@@ -36,7 +36,7 @@ Some notable functionalities of the website:
 - Authentication/Authorization with JWT.
 - SSL connection to payment system (emulated) with OAuth protocol.
 
-For the detailed functionalities, please refer to the [requirements.pdf](/public/covid-requirements.pdf). The file is written in Vietnamese.
+For the detailed functionalities, please refer to the [requirements.pdf](/covid-requirements.pdf). The file is written in Vietnamese.
 ## Tech stack
 
 - Front-end: React.js
