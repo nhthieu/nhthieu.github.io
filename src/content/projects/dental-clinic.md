@@ -35,8 +35,8 @@ All the schemas designed for the project will also be included in the repo. More
 This project will be built into a web application with the following tech stack (planning):
 
 - Database: MSSQL Server
-- Backend: Go, Gin, GORM, JWT
-- Frontend: Next, Tailwind.
+- Backend: Express, Prisma, JWT, Typescript
+- Frontend: Next, Tailwind, Typescript
 - API: Swagger, Postman.
 
 ## Contributions
