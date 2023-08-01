@@ -12,7 +12,18 @@ const { className }: Props = Astro.props;
 <footer
   class="w-full text-sm mt-12 py-6 text-textLight/75 dark:text-textDark/75 leading-relaxed border-t border-baseDark/10 dark:border-baseLight/10"
 >
-  <div class=`${className} flex items-center justify-between md:flex-col md:space-y-3 md:text-xs`>
+  <div
+    class=`${className} flex items-center justify-between md:flex-col md:space-y-3 md:text-xs`
+  >
+    <div class="flex flex-col text-xs">
+      <p>&copy; {date.getFullYear()} Hieu Nguyen | All Rights Reserved.</p>
+      <p>
+        Built with <a
+          class="hover:text-primaryLight dark:hover:text-primaryDark hover:underline"
+          target="_blank"
+          href="https://astro.build/">Astro</a>
+      </p>
+    </div>
     <div id="socials" class="flex space-x-4 underline items-center">
       <a target="_blank" href="https://www.linkedin.com/in/nhthieu16/">
         <LinkedInIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
@@ -23,9 +34,6 @@ const { className }: Props = Astro.props;
       <a target="_blank" href="mailto:nguyenhotrunghieu0106@gmail.com">
         <GoogleIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
       </a>
-    </div>
-    <div class="flex items-center">
-      <p>Hieu Nguyen &copy; {date.getFullYear()} | All Rights Reserved.</p>
     </div>
   </div>
 </footer>
