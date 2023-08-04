@@ -33,7 +33,7 @@ Since it's my personal website, I wanted to try out some new technologies, some 
 - [Astro](https://astro.build/): An all-in-one web framework for building fast, content-focused websites that serves a unique [zero-JS frontend architecture](https://docs.astro.build/en/concepts/islands/).
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that helps build websites fast.
 - [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing to the language.
-- [Firebase](https://firebase.google.com/): It's for storing comments and other stuff that I might add in the future. I don't know, it might be too much. I'm thinking on using [Pocketbase](https://www.pocketbase.io/) instead, it's a lightweight alternative to Firebase.
+- [Firebase](https://firebase.google.com/): A BaaS (Backend as a Service) for storing comments and other stuff that I might add in the future. I don't know, it might be too much. I'm thinking on using [Pocketbase](https://www.pocketbase.io/) instead, it's a lightweight alternative to Firebase.
 
 ### Preact
 
@@ -72,11 +72,66 @@ This is a HTML tag from my source code. Beautiful innit?
 
 ## About the blog posts
 
-I was on the fence about what to use for the blog posts. I was thinking about using a CMS (Content Management System) like [Sanity](https://www.sanity.io/), [Contentful](https://www.contentful.com/), or [Prismic](https://prismic.io/). However, I decided to run my blogs on a low-tech solution. It has no CMS, but plain markdown files are parsed to HTML with a bit of restyling using [Tailwind typography](https://tailwindcss.com/docs/typography-plugin) and uploaded to the server. I love the simplicity of markdown files and I think it's more than enough for my needs. Whenever I want to edit or write a new blog post, I just open up a new file and start writing. No need to login, no need to worry about the CMS going down or having updates, and no need to worry about my free-tier account going out of limits! I then push the commits to my Github repository and [Vercel](https://vercel.com/) will automatically build and deploy the website for me. Besides, Astro provides me a built-in content collections I mentioned above, it makes querying and filtering the blog posts a breeze.
+I was on the fence about what to use for the blog posts. I was thinking about using a CMS (Content Management System) like [Sanity](https://www.sanity.io/), [Contentful](https://www.contentful.com/), or [Prismic](https://prismic.io/). However, I decided to run my blogs on a low-tech solution. It has no CMS, but plain markdown files are parsed to HTML with a bit of restyling using [Tailwind typography](https://tailwindcss.com/docs/typography-plugin) and uploaded to the server. I love the simplicity of markdown files and I think it's more than enough for my needs. Whenever I want to edit or write a new blog post, I just open up a new file and start writing. No need to login, no need to worry about the CMS going down or having updates, and no need to worry about my free-tier account going out of limits!
 
-<!-- ![folder structure](../../assets/tech-stack-2.png)
+## Deployment
 
-*(updated 06/20/2023)* Here's the folder structure of my blog posts, as well as project posts since they're pretty much the same. As you can see I have a folder called `content` which contains all of the posts. Each post is a markdown file with some metadata at the top and Astro's **Content Collections** will take care of the rest. -->
+For the deployment, I use Github Actions to automate my build and deploy process. Lucky for me, Astro has a [documentation](https://docs.astro.build/en/guides/deploy/github/) on how to do this. In a nutshell, I name my repository `nhthieu.github.io` and create a workflow file in `.github/workflows` folder. The file looks like this:
+
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
+  push:
+    branches: [main]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        # with:
+        # path: . # The root location of your Astro project inside the repository. (optional)
+        # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
+        # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+```
+
+I then edit the `astro.config.mjs` file to include the following:
+
+```js
+export default defineConfig({
+  site: 'https://nhthieu.github.io',
+  // ...
+})
+```
+
+, then change the settings of my repository and choose `GitHub Actions` as the Source of my site in the `Pages` section.
+
+Finally, I push the commits to my Github repository and that's it, my website is now live!
 
 ## What's next?
 
