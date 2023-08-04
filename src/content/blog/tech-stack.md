@@ -76,7 +76,7 @@ I was on the fence about what to use for the blog posts. I was thinking about us
 
 ## Deployment
 
-For the deployment, I use Github Actions to automate my build and deploy process. Lucky for me, Astro has a [documentation](https://docs.astro.build/en/guides/deploy/github/) on how to do this. In a nutshell, I name my repository `nhthieu.github.io` and create a workflow file in `.github/workflows` folder. The file looks like this:
+For the deployment, I use Github Actions to automate my build and deploy process. Lucky for me, Astro has a [documentation](https://docs.astro.build/en/guides/deploy/github/) on how to do this. In a nutshell, I name my repository `nhthieu.github.io` and create a `deploy.yml` file in `.github/workflows` folder. The file looks like this:
 
 ```yaml
 name: Deploy to GitHub Pages
