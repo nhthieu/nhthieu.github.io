@@ -7,7 +7,7 @@
   draft: false
 ---
 
-I love Ubuntu, and had been using it for a long time since I started my Linux journey. I love the stability, the ease of use, the package manager, and the community. However, ever since Canonical's decision to move commonly used applications, like the web browsers, exclusively to Snap packages and the additional overhead that came with those being containerized instead of just running on the bare metal was ultimately my reason for ditching Ubuntu. It just leaves a bad impression on me.
+I love Ubuntu, and had been using it for a long time since I started my Linux journey. I love the stability, the ease of use, the package manager and the community. However, ever since Canonical's decision to move commonly used applications, like the web browsers, exclusively to Snap packages and the additional overhead that came with those being containerized instead of just running on the bare metal was ultimately my reason for ditching Ubuntu. It just leaves a bad impression on me.
 
 I then began distro-hopping to find an alternative, and it sort of became a hobby of mine to try out different distros. I tried Mint, hopped to Debian for a while for my projects, stayed on Fedora for its Flatpak support and "cutting edge" packages for the last couple of months. Though, due to the recent Red Hat [drama](https://www.youtube.com/watch?v=kF5pyVUQBH8) that's been going on in the Linux community, I started to have second thoughts. Don't get me wrong, I'm not a Linux elitist to be giving out these opinions, I just want to use a distro that I can trust and not have to worry about all the fuss behind it.
 
