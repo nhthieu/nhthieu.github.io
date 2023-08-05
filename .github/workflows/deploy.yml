@@ -31,6 +31,12 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
+    - name: Build
+      run: pnpm build
+    - name: Deploy to GitHub Pages
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist  
 
   deploy:
     needs: build
