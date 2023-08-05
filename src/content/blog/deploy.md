@@ -2,7 +2,7 @@
   title: "How I deployed to Github Pages"
   description: "My implementation of a CI/CD pipeline to deploy my website"
   publishDate: "2023-08-05"
-  readingTime: 5
+  readingTime: 3
   category: "tech"
   draft: false
 ---
@@ -13,7 +13,7 @@ I deployed my website with Vercel before because it was easy and the free tier i
 
 It's free. I mean, the limits are enough for free usage and I don't think a simple website like this will ever exceed them. You can view more details [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#limits-on-use-of-github-pages).
 
-The problem with Github Pages is that it requires an `index.html` file in the root directory. But my website is built with Astro, which doesn't have an `index.html` file unless I build it. This is where `Github Actions` comes to the rescue.
+The problem with Github Pages is that it requires an `index.html` file. But my website is built with Astro, which doesn't have an `index.html` file unless I build it. This is where `Github Actions` comes to the rescue.
 
 ## Github Actions
 
@@ -87,9 +87,9 @@ jobs:
         uses: actions/deploy-pages@v2 # change the version to v2
 ```
 
-The remaining steps are just the same as the Astro documentation:
+The remaining steps are fairly simple:
 
-1. Rename my repo to `<username>.github.io`
+1. Rename the repo to `<username>.github.io`
 2. Modify `astro.config.mjs`:
 
 ```js
@@ -101,7 +101,6 @@ export default defineConfig({
 
 3. On GitHub, go to your repository’s Settings tab and find the Pages section of the settings.
 4. Choose GitHub Actions as the Source of your site.
-5. Commit the new workflow file and push it to GitHub.
 
 And that's it. Now whenever I commit and push something new to the repo, Github Actions will automatically build and deploy the website for me. Nonetheless, I still hope that the `withastro` action will be fixed soon so that I can use it again.
 
