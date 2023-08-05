@@ -32,12 +32,11 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Build
-      run: pnpm build
+      run: pnpm run build
     - name: Deploy to GitHub Pages
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-pages-artifact@v2
       with:
-        name: dist
-        path: dist  
+        path: dist 
 
   deploy:
     needs: build
@@ -48,4 +47,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
