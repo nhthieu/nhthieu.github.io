@@ -1,4 +1,4 @@
-# nhthieu.github.io
+# Hieu Nguyen's Website
 
 My personal website to showcase my profile and my projects. I sometimes write tech and non-tech related blogs on the website too. You can visit it [here](https://nhthieu.github.io/).
 
