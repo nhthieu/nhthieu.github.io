@@ -3,7 +3,7 @@
   description: "I use Arch btw"
   publishDate: "2023-07-15"
   readingTime: 6
-  category: "tech"
+  tags: ['arch', 'linux', 'rice']
   draft: false
 ---
 

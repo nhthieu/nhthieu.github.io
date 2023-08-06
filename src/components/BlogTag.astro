@@ -1,0 +1,11 @@
+---
+type Props = {
+  tag: string;
+};
+
+const { tag }: Props = Astro.props;
+---
+
+<div class="bg-primaryLight dark:bg-primaryDark px-2 text-baseLight dark:text-baseDark rounded-lg mb-1 mr-2">
+  <h1>{tag}</h1>
+</div>

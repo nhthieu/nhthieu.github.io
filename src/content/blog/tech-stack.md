@@ -3,7 +3,7 @@
   description: "A brief overview of the website architecture"
   publishDate: "2023-05-27"
   readingTime: 10
-  category: "tech"
+  tags: ['astro', 'preact', 'tailwindcss', 'typescript', 'firebase', 'design']
   draft: false
 ---
 

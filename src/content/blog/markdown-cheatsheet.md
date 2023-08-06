@@ -3,7 +3,7 @@
   description: "A cheatsheet for markdown syntax, including extended syntax."
   publishDate: "2023-06-23"
   readingTime: 2
-  category: "tech"
+  tags: ['markdown', 'syntax']
   draft: false
 ---
 

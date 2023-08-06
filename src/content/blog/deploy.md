@@ -3,7 +3,7 @@
   description: "My implementation of a CI/CD pipeline to deploy my website"
   publishDate: "2023-08-05"
   readingTime: 3
-  category: "tech"
+  tags: ['astro', 'github', 'github-actions', 'pnpm', 'ci/cd']
   draft: false
 ---
 

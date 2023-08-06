@@ -3,7 +3,7 @@
   description: "Motherfucking blog"
   publishDate: "2023-06-20"
   readingTime: 5
-  category: "tech"
+  tags: ['lol']
   draft: false
 ---
 

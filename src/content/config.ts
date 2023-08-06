@@ -8,7 +8,8 @@ const blogCollection = defineCollection({
     // description: z.string(),
     readingTime: z.number().int(),
     author: z.string().default('Hieu Nguyen'),
-    category: z.string().nullable(),
+    // category: z.string().nullable(),
+    tags: z.array(z.string()).optional(),
     draft: z.boolean()
   })
 });
