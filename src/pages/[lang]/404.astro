@@ -1,0 +1,28 @@
+---
+import languages from '../../i18n/languages';
+import { getLanguageFromURL, useTranslations } from '@/i18n/utils';
+import NotFoundLayout from '@/layouts/NotfoundLayout.astro';
+// import SplashLayout from '../../layouts/SplashLayout.astro';
+
+export const getStaticPaths = () => Object.keys(languages).map((lang) => ({ params: { lang } }));
+const t = useTranslations(Astro);
+const lang = getLanguageFromURL(Astro.url.pathname);
+---
+
+<NotFoundLayout title={`Hieu Nguyen - 404`}>
+  <div class="flex items-center justify-center w-full h-screen space-x-24">
+    <div class="leading-relaxed flex flex-col items-center justify-center">
+      <p class="text-3xl font-bold leading-relaxed">{t('404.title')}</p>
+      <p class="mb-8 leading-relaxed">{t('404.description')}</p>
+      <a
+        href={`/${lang}`}
+        class="hover:opacity-75 bg-primaryLight dark:bg-primaryDark py-2 px-4 rounded-2xl text-baseLight dark:text-baseDark font-bold"
+        >{t('404.linkBack')}</a
+      >
+    </div>
+  </div>
+</NotFoundLayout>
+
+<script>
+	window.addEventListener('load', () => (window as any).fathom.trackGoal('4KN9VI2W', 0));
+</script>

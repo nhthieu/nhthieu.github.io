@@ -14,7 +14,7 @@ export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 ---
 
-<MainLayout title={`${t('site.title')}`}>
+<MainLayout title={`${t('site.author')} - ${t('site.title')}`}>
   <div class="w-full">
     <Hero />
     <section id="about" class="w-full mt-8">

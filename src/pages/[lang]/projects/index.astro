@@ -4,23 +4,25 @@ import { getCollection } from "astro:content";
 import ProjectItem from "@/components/ProjectItem.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import allLanguages from "@/i18n/languages";
+import { useTranslations } from "@/i18n/utils";
 
 export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 
+const t = useTranslations(Astro);
 const projects = await getCollection("projects", ({data}) => {
   return data.draft !== true;
 });
 ---
 
-<MainLayout title="Hieu Nguyen - Projects">
+<MainLayout title={`${t('site.author')} - ${t('project.title')}`}>
   <PageTitle 
-    title="Projects"
-    description="Some are from school and some are side projects on my own time."
+    title={t('project.title')}
+    description={t('project.description')}
   />
 
   <div class="mb-8">
-    <h1 class="font-bold text-xl mb-4 md:text-lg">Current:</h1>
+    <h1 class="font-bold text-xl mb-4 md:text-lg">{t('project.current')}:</h1>
     {
       projects
         .filter(project => project.data.status === 'in-progress').length === 0 ?
@@ -37,7 +39,7 @@ const projects = await getCollection("projects", ({data}) => {
   </div>
 
   <div>
-    <h1 class="font-bold text-xl mb-4 md:text-lg">Past:</h1>
+    <h1 class="font-bold text-xl mb-4 md:text-lg">{t('project.past')}:</h1>
     {
       projects
         .filter(project => project.data.status === 'completed').length === 0 ?

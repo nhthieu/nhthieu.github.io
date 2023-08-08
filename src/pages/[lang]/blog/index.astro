@@ -4,19 +4,21 @@ import { getCollection } from "astro:content";
 import BlogItem from "@/components/BlogItem.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import allLanguages from "@/i18n/languages";
+import { useTranslations } from "@/i18n/utils";
 
 export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 
+const t = useTranslations(Astro);
 const posts = await getCollection("blog", ({ data }) => {
   return data.draft !== true;
 });
 ---
 
-<MainLayout title="Hieu Nguyen - Blog">
+<MainLayout title={`${t('site.author')} - ${t('blog.title')}`}>
   <PageTitle
-    title="Blog"
-    description="Where I write tech and non-tech related stories, ideas and insights."
+    title={t("blog.title")}
+    description={t("blog.description")}
   />
   <div>
     {

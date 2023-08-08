@@ -1,4 +1,3 @@
-// import type { ModalTranslations } from '@docsearch/react';
 // import enNav from './en/nav';
 import type enUI from './en/ui';
 import type languages from './languages';

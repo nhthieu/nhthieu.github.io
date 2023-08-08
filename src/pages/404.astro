@@ -1,17 +1,6 @@
 ---
-import NotFoundLayout from "@/layouts/NotfoundLayout.astro";
+import FourOhFour from './[lang]/404.astro';
+
 ---
 
-<NotFoundLayout title={"Hieu Nguyen - 404"}>
-  <div class="flex items-center justify-center w-full h-screen space-x-24">
-    <div class="leading-relaxed flex flex-col items-center justify-center">
-      <p class="text-3xl font-bold leading-relaxed">404! That's an error.</p>
-      <p class="mb-8 leading-relaxed">The requested URL was not found.</p>
-      <a
-        href="/"
-        class="hover:opacity-75 bg-primaryLight dark:bg-primaryDark py-2 px-4 rounded-2xl text-baseLight dark:text-baseDark font-bold"
-        >Back to home</a
-      >
-    </div>
-  </div>
-</NotFoundLayout>
+<FourOhFour />
