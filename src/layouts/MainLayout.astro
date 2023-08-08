@@ -5,9 +5,8 @@ import "@fontsource/noto-sans";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 
-import { getLanguageFromURL, useTranslations } from "../i18n/utils";
+import { getLanguageFromURL } from "../i18n/utils";
 
-const t = useTranslations(Astro);
 const lang = getLanguageFromURL(Astro.url.pathname);
 type Props = {
   title: string;

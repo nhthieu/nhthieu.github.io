@@ -9,7 +9,6 @@ import { getLanguageFromURL, useTranslations } from "@/i18n/utils";
 const t = useTranslations(Astro);
 const lang = getLanguageFromURL(Astro.url.pathname);
 const posts = await getCollection("blog", (blog) => {
-  console.log(blog.slug.split('/')[0]);
   return blog.slug.split('/')[0] === lang && blog.data.draft !== true;
 });
 

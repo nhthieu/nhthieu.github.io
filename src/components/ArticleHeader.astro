@@ -10,7 +10,6 @@ type Props = {
 };
 
 const lang = getLanguageFromURL(Astro.url.pathname);
-console.log(lang);
 const { title, contentType, author, publishDate, readingTime, url }: Props =
   Astro.props;
 ---
