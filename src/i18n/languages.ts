@@ -1,6 +1,6 @@
 const allLanguages = {
 	en: 'English',
-	fr: 'Français',
+	// fr: 'Français',
   vn: 'Tiếng Việt',
 } as const;
 

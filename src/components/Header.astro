@@ -1,6 +1,7 @@
 ---
 import { getLanguageFromURL, useTranslations } from "@/i18n/utils";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSelect from "./LanguageSelect";
 
 type Props = {
   className?: string;
@@ -11,18 +12,18 @@ const lang = getLanguageFromURL(Astro.url.pathname);
 const { className }: Props = Astro.props;
 ---
 
-<header
-  class="h-20 mb-12 w-full border-baseDark/10 dark:border-baseLight/10"
->
-  <div class={`${className} flex items-center justify-between mx-auto pt-6 h-full`}>
+<header class="h-20 mb-12 w-full border-baseDark/10 dark:border-baseLight/10">
+  <div
+    class={`${className} flex items-center justify-between mx-auto pt-6 h-full`}
+  >
     <div class="flex space-x-4">
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}`
-        href=`/${lang}/`>{t('navbar.home')}</a
+        href=`/${lang}/`>{t("navbar.home")}</a
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }`
-        href=`/${lang}/projects`>{t('navbar.projects')}</a
+        href=`/${lang}/projects`>{t("navbar.projects")}</a
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primaryLight dark:text-primaryDark'}`
@@ -30,9 +31,12 @@ const { className }: Props = Astro.props;
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primaryLight dark:text-primaryDark'}`
-        href=`/${lang}/about`>{t('navbar.about')}</a
+        href=`/${lang}/about`>{t("navbar.about")}</a
       >
     </div>
-    <ThemeToggle client:only />
+    <div class="flex items-center">
+      <ThemeToggle client:idle />
+      <LanguageSelect lang={lang} client:idle />
+    </div>
   </div>
 </header>
