@@ -9,6 +9,11 @@ export default {
   'navbar.blog': 'Blog',
   'navbar.about': 'About',
 
+  // Home page
+  'home.title': 'Home',
+  'home.resume': 'View my full resume',
+  'home.contact': 'Get in touch',
+
   // Project page
   'project.title': 'Projects',
   'project.description': 'Some are from school and some are side projects on my own time.',
@@ -27,4 +32,7 @@ export default {
   '404.title': '404! That\'s an error.',
   '404.description': 'The requested URL was not found.',
   '404.linkBack': 'Back to home',
+
+  // Dynamic page
+  'dynamic.back': 'Back',
 }

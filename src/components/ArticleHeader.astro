@@ -1,5 +1,5 @@
 ---
-import { getLanguageFromURL } from '@/i18n/utils';
+import { getLanguageFromURL, useTranslations } from '@/i18n/utils';
 type Props = {
   title: string;
   contentType: string;
@@ -9,6 +9,7 @@ type Props = {
   url?: string;
 };
 
+const t = useTranslations(Astro);
 const lang = getLanguageFromURL(Astro.url.pathname);
 const { title, contentType, author, publishDate, readingTime, url }: Props =
   Astro.props;
@@ -19,7 +20,7 @@ const { title, contentType, author, publishDate, readingTime, url }: Props =
     href={contentType === "blog" ? `/${lang}/blog` : `/${lang}/projects`}
     class="inline-block mb-4 text-dark/75 dark:text-light/75 hover:underline"
   >
-    &#x2190; Back
+    &#x2190; {t('dynamic.back')}
   </a>
   <h1 class="font-bold text-2xl md:text-xl mb-1 text-primaryLight dark:text-primaryDark"># {title}</h1>
   {

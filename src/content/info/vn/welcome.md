@@ -2,8 +2,8 @@
   title: "Welcome"
 ---
 
-[Hi, I'm Hieu Nguyen](/about). I'm a College Student / Developer based in Ho Chi Minh City, Vietnam.
+[Hi, Mình là Hiếu Nguyễn](/vn/about). Mình là sinh viên / lập trình viên đang sống tại Thành phố Hồ Chí Minh, Việt Nam.
 
-This is my personal website where I aim to showcase my [projects](/projects) and document my journey as a developer. I believe that knowledge is most valuable when shared, so I hope that you can find something useful here.
+Đây là trang web cá nhân của mình nơi mình muốn giới thiệu về những [dự án](/vn/projects) mình đã làm và ghi lại hành trình của mình. Mình tin rằng kiến thức sẽ có giá trị hơn khi được chia sẻ, vì vậy mình hy vọng bạn có thể tìm thấy điều gì đó hữu ích ở đây.
 
-I also [write](/blog). Mostly blogs about tech, life, etc.
+Mình cũng có [viết](/vn/blog). Chủ yếu là những bài viết về công nghệ, cuộc sống, v.v.

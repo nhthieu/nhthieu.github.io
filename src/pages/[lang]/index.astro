@@ -18,7 +18,7 @@ export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 ---
 
-<MainLayout title={`${t("site.author")} - ${t("site.title")}`}>
+<MainLayout title={`${t("site.author")} - ${t("home.title")}`}>
   <div class="w-full">
     <Hero />
     <section id="about" class="w-full mt-8">
@@ -28,10 +28,10 @@ export const getStaticPaths = () =>
 
       <div class="flex flex-col mt-6 leading-relaxed italic">
         <a href="/cv.pdf" target="_blank" class="hover:underline"
-          >&#128279; View my full resume
+          >&#128279; {t('home.resume')}
         </a>
         <a href="mailto:nguyenhotrunghieu0106@gmail.com" class="hover:underline"
-          >&#128231; Get in touch</a
+          >&#128231; {t('home.contact')}</a
         >
       </div>
     </section>
