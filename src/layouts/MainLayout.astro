@@ -5,16 +5,17 @@ import "@fontsource/noto-sans";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 
-import { useTranslations } from "../i18n/utils";
+import { getLanguageFromURL, useTranslations } from "../i18n/utils";
 
 const t = useTranslations(Astro);
+const lang = getLanguageFromURL(Astro.url.pathname);
 type Props = {
   title: string;
 };
 const { title }: Props = Astro.props;
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

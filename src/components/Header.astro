@@ -1,10 +1,13 @@
 ---
+import { getLanguageFromURL, useTranslations } from "@/i18n/utils";
 import ThemeToggle from "./ThemeToggle";
 
 type Props = {
   className?: string;
 };
 
+const t = useTranslations(Astro);
+const lang = getLanguageFromURL(Astro.url.pathname);
 const { className }: Props = Astro.props;
 ---
 
@@ -15,19 +18,19 @@ const { className }: Props = Astro.props;
     <div class="flex space-x-4">
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}`
-        href="/">Home</a
+        href=`/${lang}/`>{t('navbar.home')}</a
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }`
-        href="/projects">Projects</a
+        href=`/${lang}/projects`>{t('navbar.projects')}</a
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/blog') && 'underline text-primaryLight dark:text-primaryDark'}`
-        href="/blog">Blog</a
+        href=`/${lang}/blog`>Blog</a
       >
       <a
         class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/about') && 'underline text-primaryLight dark:text-primaryDark'}`
-        href="/about">About</a
+        href=`/${lang}/about`>{t('navbar.about')}</a
       >
     </div>
     <ThemeToggle client:only />

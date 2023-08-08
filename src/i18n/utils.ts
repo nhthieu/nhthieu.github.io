@@ -1,5 +1,3 @@
-// import { ui, defaultLang } from './ui';
-
 import type { AstroGlobal } from "astro";
 import type { UIDict, UIDictionaryKeys, UILanguageKeys } from "./translations-checker";
 
@@ -19,7 +17,8 @@ export const translations = mapDefaultExports<UIDict>(
 export const fallbackLang = 'en';
 
 export function getLanguageFromURL(pathname: string) {
-	const langCodeMatch = pathname.match(/\/([a-z]{2}-?[a-z]{0,2})\//);
+	// const langCodeMatch = pathname.match(/\/([a-z]{2}-?[a-z]{0,2})\//);
+	const langCodeMatch = pathname.match(/\/([a-z]{2})\/?/);
 	return langCodeMatch ? langCodeMatch[1] : 'en';
 }
 

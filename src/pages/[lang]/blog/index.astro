@@ -1,8 +1,12 @@
 ---
-import MainLayout from "../../layouts/MainLayout.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 import BlogItem from "@/components/BlogItem.astro";
 import PageTitle from "@/components/PageTitle.astro";
+import allLanguages from "@/i18n/languages";
+
+export const getStaticPaths = () =>
+  Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 
 const posts = await getCollection("blog", ({ data }) => {
   return data.draft !== true;

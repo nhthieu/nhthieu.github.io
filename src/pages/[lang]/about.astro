@@ -3,6 +3,10 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import Article from "@/components/Article.astro";
 import { getEntry } from "astro:content";
+import allLanguages from "@/i18n/languages";
+
+export const getStaticPaths = () =>
+  Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 
 const data = await getEntry('info', 'about-me');
 const {Content, headings} = await data.render();
