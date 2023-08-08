@@ -15,13 +15,13 @@ I then began distro-hopping to find an alternative, and it sort of became a hobb
 
 I knew of Arch probably because of the [memes](https://www.youtube.com/watch?v=Drd5qA4bsaM), and to be honest, I think my decision of using Arch was because of them. I admit at first I was hesitant to try it out on my machine because of the difficulty and the breakages that people have been passing around, but daily driving it for the last month has legitimately been far better than any experiences I’ve had with other distros before. It's fast, smooth, and it makes me feel like a real Linux elitist (I'm not, I swear).
 
-![meme](../../assets/i-use-arch.jpg)
+![meme](../../../assets/i-use-arch.jpg)
 
 ## Minimal Installation
 
 Let's be honest, have you ever looked at the System Monitor and wondered why your Windows CPU usage was so high? Or, when you opened the Applications and saw all these pre-installed apps/packages that you don't even use? I have, and it's annoying. They take up space, and they're just there, doing nothing. Arch is a minimal distro, which means it's up to the user to decide what packages to install. Hell, even the installation process is minimal. It's just the [tty](https://en.wikipedia.org/wiki/Tty_(Unix)) and that's it.
 
-![install](../../assets/arch-install.png)
+![install](../../../assets/arch-install.png)
 
 Though lucky for us, it comes with the `archinstall` script which makes the installation process so much easier, and it's pretty straightforward to follow. It does the heavy lifting for you, like the bootloader, networking, audio and video drivers. Still, it's required to manually partition the drives, and install the essential packages for later usage, which I wouldn't have learned if I just used the GUI installer.
 
@@ -29,7 +29,7 @@ Right off the installation, what you get is a barebones system with just the ess
 
 And of course, the [rice](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary/#wiki_rice).
 
-![rice](../../assets/arch.png)
+![rice](../../../assets/arch.png)
 
 ## The Arch Wiki
 

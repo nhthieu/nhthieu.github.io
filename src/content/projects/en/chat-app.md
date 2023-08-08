@@ -9,7 +9,7 @@
 
 This project is a part of my learning process of React, NodeJS and Socket.io. It is not meant to be a full-fledged chat app, but rather a simple one to help me understand the basics of these technologies.
 
-![Screenshot](../../assets/chat-app-1.png)
+![Screenshot](../../../assets/chat-app-1.png)
 
 ## Tech Stack
 

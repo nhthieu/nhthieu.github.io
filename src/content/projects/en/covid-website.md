@@ -9,7 +9,7 @@
 
 A COVID-19 Web App final project for the Web Development class at HCMUS. The website helps healthcare providers manage patient data and related necessities such as medicine, medical equipment, etc.
 
-![Covid-19 Website](../../assets/covid-website-1.png)
+![Covid-19 Website](../../../assets/covid-website-1.png)
 
 ## Note
 

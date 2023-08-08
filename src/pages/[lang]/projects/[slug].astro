@@ -5,19 +5,27 @@ import { getCollection, CollectionEntry } from "astro:content";
 import ArticleHeader from "@/components/ArticleHeader.astro";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("projects");
-  return allPosts.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+  const pages = await getCollection("projects");
+  const paths = pages.map((entry) => {
+    const [lang, ...slug] = entry.slug.split("/");
+    return {
+      params: {
+        lang,
+        slug: slug.join("/"),
+      },
+      props: entry,
+    };
+  });
+
+  return paths;
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
+const entry = Astro.props as  CollectionEntry<"projects">;
 const { Content, headings } = await entry.render();
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
-  <ArticleHeader 
+  <ArticleHeader
     contentType="project"
     title={entry.data.title}
     url={entry.data.url}

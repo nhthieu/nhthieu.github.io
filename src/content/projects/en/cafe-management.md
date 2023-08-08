@@ -9,7 +9,7 @@
 
 A Java application developed to help cafe owners manage employees, products, orders and revenue more effectively. This project was done as the final project for the module CSC13102 - Java Programming at HCMUS.
 
-![thumbnail](../../assets/cafe-management.png)
+![thumbnail](../../../assets/cafe-management.png)
 
 ## Features
 

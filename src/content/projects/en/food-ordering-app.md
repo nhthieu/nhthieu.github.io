@@ -11,7 +11,7 @@ An outsource Android application for a personal diner/restaurant that helps owne
 
 ## Logo
 
-![Logo](../../assets/food-order-1.png)
+![Logo](../../../assets/food-order-1.png)
 
 ## Contributors
 

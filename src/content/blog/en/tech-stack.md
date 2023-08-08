@@ -23,7 +23,7 @@ Yes, I know it's satire but you know what I mean right? They're not fancy, but f
 
 With all that, I think it's enough for me to take inspiration from them and build my website around that idea.
 
-![Well uhm I dunno](../../assets/tech-stack-1.jpg)
+![Well uhm I dunno](../../../assets/tech-stack-1.jpg)
 
 ## Tech stack
 

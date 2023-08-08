@@ -11,7 +11,7 @@ Hanbai is an Android product managing/ordering application that helps online mer
 
 ## Logo
 
-![Logo](../../assets/hanbai-1.png)
+![Logo](../../../assets/hanbai-1.png)
 
 ## Contributors
 
