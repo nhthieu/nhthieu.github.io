@@ -2,23 +2,28 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import Article from "@/components/Article.astro";
-import { getEntry } from "astro:content";
+import { CollectionEntry, getEntry } from "astro:content";
 import allLanguages from "@/i18n/languages";
-import { useTranslations } from "@/i18n/utils";
+import { getLanguageFromURL, useTranslations } from "@/i18n/utils";
+
+const t = useTranslations(Astro);
+const lang = getLanguageFromURL(Astro.url.pathname);
 
 export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 
-const t = useTranslations(Astro);
-const data = await getEntry('info', 'about-me');
-const {Content, headings} = await data.render();
+const data = (await getEntry(
+  "info",
+  `${lang}/about-me`
+)) as CollectionEntry<"info">;
+const { Content, headings } = await data.render();
 ---
 
-<MainLayout title={`${t('site.author')} - ${t('about.title')}`}>
-	<div class="w-full">
-    <PageTitle title={`${t('about.description')}`}/>
-		<Article headings={headings} toc={false}>
+<MainLayout title={`${t("site.author")} - ${t("about.title")}`}>
+  <div class="w-full">
+    <PageTitle title={`${t("about.description")}`} />
+    <Article headings={headings} toc={false}>
       <Content />
     </Article>
-	</div>
+  </div>
 </MainLayout>

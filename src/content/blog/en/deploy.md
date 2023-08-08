@@ -21,7 +21,7 @@ Github Actions is a CI/CD tool that allows you to automate your workflow. It's f
 
 Astro has a [documentation](https://docs.astro.build/en/guides/deploy/github/) on how to do deploy with Github Actions. It uses `withastro` action behind the scene to build the website. But there's a little bug with the `pnpm` that I use for the package manager that breaks the build.
 
-![pnpm bug](../../assets/pnpm-error.png)
+![pnpm bug](../../../assets/pnpm-error.png)
 
 Why `pnpm` you may ask? Well, `npm` is slow, though the `withastro` works fine with `npm` (I built with it when I found out that `pnpm` failed), but I want the speed of `pnpm`, not just for the build process but also for the development process.
 
@@ -104,7 +104,7 @@ export default defineConfig({
 
 And that's it. Now whenever I commit and push something new to the repo, Github Actions will automatically build and deploy the website for me. Nonetheless, I still hope that the `withastro` action will be fixed soon so that I can use it again.
 
-![build success](../../assets/build-success.png)
+![build success](../../../assets/build-success.png)
 
 The whole website is not even 5mb, not bad huh? You can view the the whole script on my [Github repo](https://github.com/nhthieu/nhthieu.github.io/blob/main/.github/workflows/deploy.yml)
 

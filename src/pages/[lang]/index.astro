@@ -4,17 +4,21 @@ import Hero from "@/components/Hero.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { CollectionEntry, getEntry } from "astro:content";
 import allLanguages from "@/i18n/languages";
-import { useTranslations } from "@/i18n/utils";
+import { getLanguageFromURL, useTranslations } from "@/i18n/utils";
 
+const lang = getLanguageFromURL(Astro.url.pathname);
 const t = useTranslations(Astro);
-const data = (await getEntry("info", "welcome")) as CollectionEntry<"info">;
+const data = (await getEntry(
+  "info",
+  `${lang}/welcome`
+)) as CollectionEntry<"info">;
 const { Content, headings } = await data.render();
 
 export const getStaticPaths = () =>
   Object.keys(allLanguages).map((lang) => ({ params: { lang } }));
 ---
 
-<MainLayout title={`${t('site.author')} - ${t('site.title')}`}>
+<MainLayout title={`${t("site.author")} - ${t("site.title")}`}>
   <div class="w-full">
     <Hero />
     <section id="about" class="w-full mt-8">
