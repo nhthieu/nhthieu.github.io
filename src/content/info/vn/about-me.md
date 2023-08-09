@@ -20,7 +20,7 @@ Mình không dám nói mình là một sinh viên xuất sắc nhưng chắc ch�
 
 ## Kinh nghiệm
 
-Vào cuối năm 2021, mình đã làm một dự án freelance cho một quán ăn nhỏ. Đó là một ứng dụng Android cho phép khách hàng đặt món ăn và đồ uống trực tuyến. Mình đã làm chung với một nhóm gồm 4 bạn khác để xây dựng ứng dụng từ con số 0. Đó là một trải nghiệm tuyệt vời và mình đã học được rất nhiều từ đó.
+Vào cuối năm 2021, mình đã làm một dự án freelance cho một quán ăn nhỏ. Đó là một ứng dụng Android cho phép khách hàng đặt món ăn và đồ uống trực tuyến. Mình đã làm chung với một nhóm gồm 4 bạn khác để xây dựng ứng dụng, và đó là một trải nghiệm tuyệt vời và mình đã học được rất nhiều.
 
 Sau đó, mình đã tham gia [Pencil Philosophy Coding Contest](https://triethocbutchi.com/), một cuộc thi lập trình kéo dài 3 tháng dành cho sinh viên tại Việt Nam. Mình đã làm việc cùng với các thành viên khác để xây dựng một ứng dụng quản lý sản phẩm và đặt hàng giống như Shopee cho một doanh nghiệp nhỏ. Đó là một trải nghiệm cực kỳ thú vị.
 
@@ -32,7 +32,7 @@ Mình có chơi guitar và là một fan hâm mộ của [anh này](https://www.
 
 ## Liên hệ
 
-Mình không hay sử dụng mạng xã hội thường xuyên, nhưng mình sẽ phản hồi nhanh nhất qua [email](mailto:nguyenhotrunghieu0106@gmail.com). Mình cũng có trang một [Github](https://github.com/nhthieu) và [LinkedIn](https://www.linkedin.com/in/nhthieu16/).
+Mình không hay sử dụng mạng xã hội thường xuyên, nhưng mình hay phản hồi qua [email](mailto:nguyenhotrunghieu0106@gmail.com). Mình cũng có một trang [Github](https://github.com/nhthieu) và profile [LinkedIn](https://www.linkedin.com/in/nhthieu16/).
 
 ## FAQ
 

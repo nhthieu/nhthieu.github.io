@@ -27,7 +27,7 @@ export default {
 
   // About page
   'about.title': 'Về mình',
-  'about.description': 'Hi, mình là Hiếu Nguyễn',
+  'about.description': 'Xin chào, mình là Hiếu Nguyễn',
 
   // 404 page
   '404.title': '404! Lỗi rồi.',
