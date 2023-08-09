@@ -18,11 +18,11 @@ const { className }: Props = Astro.props;
   >
     <div class="flex space-x-4">
       <a
-        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === '/' && 'underline text-primaryLight dark:text-primaryDark'}`
+        class={`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname === `/${lang}/` && 'underline text-primaryLight dark:text-primaryDark'}`}
         href=`/${lang}/`>{t("navbar.home")}</a
       >
       <a
-        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark' }`
+        class=`hover:text-primaryLight dark:hover:text-primaryDark ${Astro.url.pathname.includes('/projects') && 'underline text-primaryLight dark:text-primaryDark'}`
         href=`/${lang}/projects`>{t("navbar.projects")}</a
       >
       <a
@@ -35,8 +35,8 @@ const { className }: Props = Astro.props;
       >
     </div>
     <div class="flex items-center">
-      <ThemeToggle client:idle />
       <LanguageSelect lang={lang} client:idle />
+      <ThemeToggle client:idle />
     </div>
   </div>
 </header>
