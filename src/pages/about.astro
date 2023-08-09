@@ -4,15 +4,15 @@ import PageTitle from "@/components/PageTitle.astro";
 import Article from "@/components/Article.astro";
 import { getEntry } from "astro:content";
 
-const data = await getEntry('info', 'about-me');
-const {Content, headings} = await data.render();
+const data = await getEntry("info", "about-me");
+const { Content, headings } = await data.render();
 ---
 
-<MainLayout title='Hieu Nguyen - About'>
-	<div class="w-full">
-    <PageTitle title="Hi, I'm Hieu Nguyen &#128075;" />
-		<Article headings={headings} toc={false}>
+<MainLayout title="Hieu Nguyen - About">
+  <div class="w-full">
+    <PageTitle title="Hi, I'm Hieu Nguyen 👋" />
+    <Article headings={headings} toc={false}>
       <Content />
     </Article>
-	</div>
+  </div>
 </MainLayout>
