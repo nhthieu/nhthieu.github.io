@@ -4,11 +4,11 @@ My personal website to showcase my profile and my projects. I sometimes write te
 
 I did write a [blog post](https://nhthieu.github.io/blog/tech-stack) about the overview of the technical details of the website, feel free to check it out.
 
-**Some of the key features include:**
+## Tech Stack
 
-- Built with Astro and Preact
-- Styled with Tailwind CSS
-- To come: Blog comments
+- Astro
+- Preact
+- Tailwind
 
 ## License
 
