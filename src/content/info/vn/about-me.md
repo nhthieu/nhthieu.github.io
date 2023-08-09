@@ -2,7 +2,7 @@
   title: About Me
 ---
 
-Tên đầy đủ của mình là **Nguyễn Hồ Trung Hiếu**, và mình hiện tại đang là sinh viên. Mình thích rất nhiều thứ, từ công nghệ, lập trình, khoa học tới âm nhạc, v.v.
+Tên đầy đủ của mình là **Nguyễn Hồ Trung Hiếu**, và mình hiện tại đang là sinh viên. Mình hứng thú với rất nhiều thứ, từ công nghệ, lập trình, khoa học tới âm nhạc, v.v.
 
 Có một câu trích dẫn mà mình rất thích:
 
