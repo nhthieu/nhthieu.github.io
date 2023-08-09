@@ -19,6 +19,7 @@ I did write a [blog post](/blog/tech-stack) about the overview of the technical 
 
 ## TODO
 
-- [x] i18n support
-- [ ] Add BaaS support (Firebase or Pocketbase) for blog comments
-- [ ] Gallery section
+- [x] i18n support (temporary)
+- [ ] Pagination
+- [ ] Blog search
+- [ ] Table of content
