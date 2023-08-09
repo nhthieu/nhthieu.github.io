@@ -10,7 +10,7 @@ function diveChildren(item: TocItem, depth: number): TocItem[] {
 	} else {
 		// e.g., 2
 		return diveChildren(item.children[item.children.length - 1], depth - 1);
-	}	
+	}
 }
 
 export default function generateToc(headings: MarkdownHeading[]) {

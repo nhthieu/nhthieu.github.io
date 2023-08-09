@@ -1,16 +1,16 @@
 ---
-import type { TocItem } from '@/lib/generateToc';
-import type { MarkdownHeading } from 'astro';
+import type { TocItem } from "@/lib/generateToc";
+import type { MarkdownHeading } from "astro";
 
 type Props = {
-  heading: TocItem
-}
+  heading: TocItem;
+};
 
-const { heading }:Props = Astro.props;
+const { heading }: Props = Astro.props;
 ---
 
 <li>
-  <a href={'#' + heading.slug} class="hover:underline">
+  <a href={"#" + heading.slug} class="hover:underline">
     {heading.text}
   </a>
   {

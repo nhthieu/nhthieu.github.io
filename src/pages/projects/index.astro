@@ -4,13 +4,13 @@ import { getCollection } from "astro:content";
 import ProjectItem from "@/components/ProjectItem.astro";
 import PageTitle from "@/components/PageTitle.astro";
 
-const projects = await getCollection("projects", ({data}) => {
+const projects = await getCollection("projects", ({ data }) => {
   return data.draft !== true;
 });
 ---
 
 <MainLayout title="Hieu Nguyen - Projects">
-  <PageTitle 
+  <PageTitle
     title="Projects"
     description="Some are from school and some are side projects on my own time."
   />
@@ -18,9 +18,12 @@ const projects = await getCollection("projects", ({data}) => {
   <div class="mb-8">
     <h1 class="font-bold text-xl mb-4 md:text-lg">Current:</h1>
     {
-      projects
-        .filter(project => project.data.status === 'in-progress').length === 0 ?
-        <p class="text-textLight/75 dark:text-textDark/75">No current projects.</p> :
+      projects.filter((project) => project.data.status === "in-progress")
+        .length === 0 ? (
+        <p class="text-textLight/75 dark:text-textDark/75">
+          No current projects.
+        </p>
+      ) : (
         projects
           .filter((project) => project.data.status === "in-progress")
           .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
@@ -29,15 +32,19 @@ const projects = await getCollection("projects", ({data}) => {
               <ProjectItem project={project} />
             </div>
           ))
+      )
     }
   </div>
 
   <div>
     <h1 class="font-bold text-xl mb-4 md:text-lg">Past:</h1>
     {
-      projects
-        .filter(project => project.data.status === 'completed').length === 0 ?
-        <p class="text-textLight/75 dark:text-textDark/75">No current projects.</p> :
+      projects.filter((project) => project.data.status === "completed")
+        .length === 0 ? (
+        <p class="text-textLight/75 dark:text-textDark/75">
+          No current projects.
+        </p>
+      ) : (
         projects
           .filter((project) => project.data.status === "completed")
           .sort((a, b) => a.data.sortOrder - b.data.sortOrder)
@@ -46,6 +53,7 @@ const projects = await getCollection("projects", ({data}) => {
               <ProjectItem project={project} />
             </div>
           ))
+      )
     }
   </div>
 </MainLayout>
