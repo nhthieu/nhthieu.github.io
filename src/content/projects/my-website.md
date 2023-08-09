@@ -22,4 +22,4 @@ I did write a [blog post](/blog/tech-stack) about the overview of the technical 
 - [x] i18n support (temporary)
 - [ ] Pagination
 - [ ] Blog search
-- [ ] Table of content
+- [x] Table of content
