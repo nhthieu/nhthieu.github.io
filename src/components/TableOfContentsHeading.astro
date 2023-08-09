@@ -1,6 +1,5 @@
 ---
 import type { TocItem } from "@/lib/generateToc";
-import type { MarkdownHeading } from "astro";
 
 type Props = {
   heading: TocItem;
@@ -9,13 +8,13 @@ type Props = {
 const { heading }: Props = Astro.props;
 ---
 
-<li>
-  <a href={"#" + heading.slug} class="hover:underline">
+<li class="list-none">
+  <a href={"#" + heading.slug} class="hover:underline no-underline">
     {heading.text}
   </a>
   {
     heading.children.length > 0 && (
-      <ul>
+      <ul class="pl-4 md:pl-2">
         {heading.children.map((subheading: any) => (
           <Astro.self heading={subheading} />
         ))}

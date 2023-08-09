@@ -15,9 +15,9 @@ const toc = generateToc(headings);
 {
   toc.length > 0 && (
     <div class={`toc ${className}`}>
-      <h2 class="">Contents</h2>
+      <h2 class="text-xl md:text-lg">On this page</h2>
       <nav>
-        <ul class="">
+        <ul class="border-l border-baseDark/30 dark:border-baseLight/25 pl-4 md:pl-2">
           {toc.map((heading) => (
             <TableOfContentsHeading heading={heading} />
           ))}
