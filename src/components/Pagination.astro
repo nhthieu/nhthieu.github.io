@@ -1,0 +1,40 @@
+---
+type Props = {
+  page: number;
+  className?: string;
+  prev: string | undefined;
+  next: string | undefined;
+};
+
+const { page, className, prev, next }: Props = Astro.props;
+---
+
+<div class={`${className} font-semibold text-sm`}>
+  <div class="w-20 h-full flex items-center justify-center">
+    {
+      prev && (
+        <a
+          href={prev}
+          class="w-full h-full flex items-center justify-center hover:bg-baseDark dark:hover:bg-baseLight transition-all duration-150 ease-in-out"
+        >
+          <div>Prev</div>
+        </a>
+      )
+    }
+  </div>
+
+  <div class="mx-auto font-medium">Page {page}</div>
+
+  <div class="w-20 h-full flex items-center justify-center">
+    {
+      next && (
+        <a
+          href={next}
+          class="w-full h-full flex items-center justify-center hover:bg-baseDark dark:hover:bg-baseLight transition-all duration-150 ease-in-out"
+        >
+          <div>Next</div>
+        </a>
+      )
+    }
+  </div>
+</div>
