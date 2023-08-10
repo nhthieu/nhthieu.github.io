@@ -2,9 +2,9 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import Article from "@/components/Article.astro";
-import { getEntry } from "astro:content";
+import { CollectionEntry, getEntry } from "astro:content";
 
-const data = await getEntry("info", "about-me");
+const data = (await getEntry("info", "about-me")) as CollectionEntry<"info">;
 const { Content, headings } = await data.render();
 ---
 
