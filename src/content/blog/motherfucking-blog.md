@@ -4,6 +4,8 @@
   publishDate: "2023-06-20"
   readingTime: 5
   tags: ['lol']
+  previousPost: the-best-things
+  nextPost: markdown-cheatsheet
   draft: false
 ---
 

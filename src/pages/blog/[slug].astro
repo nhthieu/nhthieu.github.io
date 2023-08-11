@@ -3,6 +3,10 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import Article from "@/components/Article.astro";
 import { getCollection, CollectionEntry } from "astro:content";
 import ArticleHeader from "@/components/ArticleHeader.astro";
+import BlogItem from "@/components/BlogItem.astro";
+import { getEntry } from "astro:content";
+import RelatedPost from "@/components/RelatedPost.astro";
+import BlogTag from "@/components/BlogTag.astro";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
@@ -13,6 +17,9 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
+const previousPost =
+  entry.data.previousPost && (await getEntry(entry.data.previousPost));
+const nextPost = entry.data.nextPost && (await getEntry(entry.data.nextPost));
 const { Content, headings } = await entry.render();
 ---
 
@@ -28,4 +35,21 @@ const { Content, headings } = await entry.render();
   <Article headings={headings}>
     <Content />
   </Article>
+
+  <!-- tags -->
+  <!-- {
+    entry.data.tags && (
+      <div class="flex mt-16 mb-2 text-sm pb-1 w-full flex-wrap">
+        {entry.data.tags.map((tag) => {
+          return <BlogTag tag={tag} />;
+        })}
+      </div>
+    )
+  } -->
+
+  <!-- related posts -->
+  <div class="flex w-full bg-baseDark/5 dark:bg-baseLight/5 rounded-md overflow-hidden mt-12">
+    <RelatedPost post={previousPost} />
+    <RelatedPost post={nextPost} isPrevious={false} />
+  </div>
 </MainLayout>
