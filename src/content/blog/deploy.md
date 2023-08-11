@@ -5,7 +5,7 @@
   readingTime: 3
   tags: ['astro', 'github', 'github-actions', 'pnpm', 'ci/cd']
   previousPost: i-use-arch-btw
-  # nextPost: tech-stack
+  nextPost: a-love-letter-to-astro
   draft: false
 ---
 
