@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+type Props = {
+  post: CollectionEntry<"blog"> | undefined;
+  isPrevious?: boolean;
+};
+
+const { post, isPrevious = true }: Props = Astro.props;
+---
+
+<div class={`w-1/2 ${post && "hover:bg-baseDark/10 dark:hover:bg-baseLight/10"}`}>
+  {
+    post && (
+      <a
+        href={`/blog/${post.slug}`}
+        class={`w-full h-full flex flex-col justify-center p-4 ${
+          !isPrevious && "items-end"
+        }`}
+      >
+        <h1 class="font-light text-sm text-textLight/75 dark:text-textDark/75 md:text-xs">
+          {isPrevious ? "Previous Post" : "Next Post"}
+        </h1>
+        <h1 class={`hover:underline ${!isPrevious && "text-end"}`}>
+          {post.data.title}
+        </h1>
+      </a>
+    )
+  }
+</div>

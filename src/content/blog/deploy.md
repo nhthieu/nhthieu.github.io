@@ -4,6 +4,8 @@
   publishDate: "2023-08-05"
   readingTime: 3
   tags: ['astro', 'github', 'github-actions', 'pnpm', 'ci/cd']
+  previousPost: i-use-arch-btw
+  # nextPost: tech-stack
   draft: false
 ---
 

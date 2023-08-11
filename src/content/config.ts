@@ -1,4 +1,4 @@
-import { z, defineCollection } from 'astro:content';
+import { z, defineCollection, reference } from 'astro:content';
 
 const blogCollection = defineCollection({
   type: 'content',
@@ -10,6 +10,8 @@ const blogCollection = defineCollection({
     author: z.string().default('Hieu Nguyen'),
     // category: z.string().nullable(),
     tags: z.array(z.string()).optional(),
+    previousPost: reference('blog').optional(),
+    nextPost: reference('blog').optional(),
     draft: z.boolean()
   })
 });
