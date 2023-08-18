@@ -29,7 +29,6 @@ const posts: CollectionEntry<"blog">[] = page.data;
     page={page.currentPage}
     prev={page.url.prev}
     next={page.url.next}
-    className="w-full h-8 flex items-center mb-12 bg-primaryLight dark:bg-primaryDark text-baseLight dark:text-baseDark rounded-md"
   />
   <div>
     {posts.map((post) => <BlogItem post={post} />)}
@@ -40,7 +39,6 @@ const posts: CollectionEntry<"blog">[] = page.data;
         page={page.currentPage}
         prev={page.url.prev}
         next={page.url.next}
-        className="w-full h-8 flex items-center mt-12 bg-primaryLight dark:bg-primaryDark text-baseLight dark:text-baseDark rounded-md"
       />
     )
   }

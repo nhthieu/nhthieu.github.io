@@ -1,15 +1,16 @@
 ---
 type Props = {
   page: number;
-  className?: string;
   prev: string | undefined;
   next: string | undefined;
 };
 
-const { page, className, prev, next }: Props = Astro.props;
+const { page, prev, next }: Props = Astro.props;
 ---
 
-<div class={`${className} font-semibold text-sm`}>
+<div
+  class="w-full h-8 flex items-center mb-12 bg-primaryLight dark:bg-primaryDark text-baseLight dark:text-baseDark rounded-md overflow-hidden font-semibold text-sm sm:text-xs sm:h-6"
+>
   <div class="w-20 h-full flex items-center justify-center">
     {
       prev && (
