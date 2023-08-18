@@ -24,7 +24,7 @@ In late 2021, I worked on a freelance project for a small personal diner. It was
 
 Following that, I participated in the [Pencil Philosophy Coding Contest](https://triethocbutchi.com/), which was a 3-month long coding contest for students in Vietnam. I worked with other team members to build a Shopee-like product management/ordering application for a small business. It was fun!
 
-I'm still actively looking for internship opportunities at the moment. I really do hope to secure one in the near future so I can gain more experience and enhance my skills, as well as update this section with something more, you know, professional ([sadge](https://www.streamscheme.com/wp-content/uploads/2022/02/sadge-600.png.webp)).
+At the moment I'm interning at [DevSamurai](https://devsamurai.vn/), a software development consulting firm. I'm working on a Jira Confluence add-on that allows users to create polls. My work mainly involves refactoring and adding new features to the add-on, sometimes I work on the backend as well.
 
 ## Hobbies
 

@@ -5,7 +5,7 @@
   readingTime: 2
   tags: ['astro', 'static-site', 'content',]
   previousPost: deploy
-  # nextPost: tech-stack
+  nextPost: first-day-intern
   draft: false
 ---
 
