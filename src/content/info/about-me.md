@@ -24,7 +24,7 @@ In late 2021, I worked on a freelance project for a small personal diner. It was
 
 Following that, I participated in the [Pencil Philosophy Coding Contest](https://triethocbutchi.com/), which was a 3-month long coding contest for students in Vietnam. I worked with other team members to build a Shopee-like product management/ordering application for a small business. It was fun!
 
-At the moment I'm interning at [DevSamurai](https://devsamurai.vn/), a software development consulting firm. I'm working on a Jira Confluence add-on that allows users to create polls. My work mainly involves refactoring and adding new features to the add-on, sometimes I work on the backend as well.
+At the moment I'm an intern at [DevSamurai](https://devsamurai.vn/), a software development consulting firm. I'm working on a Jira Confluence add-on that allows users to create polls. My work mainly involves refactoring and adding new features to the add-on, sometimes I work on the backend as well.
 
 ## Hobbies
 
@@ -32,7 +32,7 @@ I play guitar and I'm a big fan of [this guy](https://www.youtube.com/@Mautaus),
 
 ## Contact
 
-I don't actively use social media, but I'm most responsive over [email](mailto:nguyenhotrunghieu0106@gmail.com). I also have a [Github account](https://github.com/nhthieu) and a [LinkedIn profile](https://www.linkedin.com/in/nhthieu16/).
+I don't actively use social media, but I'm most responsive over [email](mailto:nhthieu16@proton.me). I also have a [Github account](https://github.com/nhthieu) and a [LinkedIn profile](https://www.linkedin.com/in/nhthieu16/).
 
 ## FAQ
 
