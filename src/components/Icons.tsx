@@ -59,15 +59,21 @@ export const LinkedInIcon = ({ className = "", ...rest }) => (
   </svg>
 )
 
-export const GoogleIcon = ({ className = "", ...rest }) => (
+export const MailIcon = ({ className = "", ...rest }) => (
   <svg
-    xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 488 512'
-    width='1em'
-    height='1em'
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    // fill="none"
+    viewBox="0 0 24 24"
     className={`w-full h-auto ${className}`}
     {...rest}
   >
-    <path d='M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z' />
+    <path
+      // fill="#0F0F0F"
+      fillRule="evenodd"
+      d="M20 4a3 3 0 013 3v10a3 3 0 01-3 3H4a3 3 0 01-3-3V7a3 3 0 013-3h16zm-.747 2H4.747l6.633 5.237a1 1 0 001.24 0L19.253 6zM3 7.169V17a1 1 0 001 1h16a1 1 0 001-1V7.169l-7.141 5.638a3 3 0 01-3.718 0L3 7.168z"
+      clipRule="evenodd"
+    ></path>
   </svg>
 )

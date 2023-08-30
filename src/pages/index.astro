@@ -2,7 +2,7 @@
 import Article from "@/components/Article.astro";
 import Hero from "@/components/Hero.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { CollectionEntry, getEntry } from "astro:content";
+import { type CollectionEntry, getEntry } from "astro:content";
 
 const data = (await getEntry("info", "welcome")) as CollectionEntry<"info">;
 const { Content, headings } = await data.render();
@@ -20,7 +20,7 @@ const { Content, headings } = await data.render();
         <!-- <a href="/cv.pdf" target="_blank" class="hover:underline"
           >&#128279; View my full resume
         </a> -->
-        <a href="mailto:nguyenhotrunghieu0106@gmail.com" class="hover:underline"
+        <a href="mailto:nhthieu16@proton.me" class="hover:underline"
           >&#128231; Get in touch</a
         >
       </div>

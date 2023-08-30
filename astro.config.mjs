@@ -13,8 +13,6 @@ export default defineConfig({
       // wrap: true,
     },
   },
-  experimental: {
-    assets: true
-  },
+  experimental: {},
   integrations: [tailwind(), preact()]
 });
