@@ -3,7 +3,6 @@
   description: "Anime waifu using AI, with the goal of creating a virtual assistant."
   url: "https://github.com/nhthieu/ai-waifu"
   status: 'in-progress'
-  sortOrder: 2
   draft: true
 ---
 

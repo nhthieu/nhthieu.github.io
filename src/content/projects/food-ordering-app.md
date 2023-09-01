@@ -3,7 +3,6 @@
   description: "An outsource Android management application for a personal diner."
   url: "https://github.com/Anhduy-git/Food-Order-Management"
   status: 'completed'
-  sortOrder: 1
   draft: false
 ---
 

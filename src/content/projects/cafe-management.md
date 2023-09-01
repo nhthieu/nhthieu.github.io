@@ -3,7 +3,6 @@
   description: "A Java application developed to help cafe managers manage employees, products, orders and revenue more effectively."
   url: "https://github.com/nhthieu/cafe-management-app"
   status: 'completed'
-  sortOrder: 4
   draft: false
 ---
 

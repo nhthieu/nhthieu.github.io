@@ -3,7 +3,6 @@
   description: "A simple multi-threaded chat application supporting concurrent connections."
   url: "https://github.com/nhthieu/java-chat-app"
   status: 'completed'
-  sortOrder: 6
   draft: false
 ---
 

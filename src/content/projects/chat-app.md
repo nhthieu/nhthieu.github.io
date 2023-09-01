@@ -3,7 +3,6 @@
   description: "A basic chat app using React, NodeJS, Socket.io"
   url: "https://github.com/nhthieu/chat-app"
   status: 'completed'
-  sortOrder: 7
   draft: true
 ---
 

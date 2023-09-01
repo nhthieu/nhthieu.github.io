@@ -2,21 +2,15 @@
   title: "Dental Clinic Management System"
   description: "A SQL Server database management system project focuses on database designing and optimization."
   url: "https://github.com/nhthieu/dental-clinic-database"
-  status: 'in-progress'
-  sortOrder: 2
+  status: 'completed'
   draft: false
 ---
 
 A SQL Server project focuses on database designing and database tuning and/or queries optimization. This project is done as the final project for the module CSC12002 - Advanced Database at HCMUS.
 
-## Note
-
-Since this project is still in progess, the Github repo is temporarily private for grading purposes. The repo will be made public after the course ends.
-
 ## Requirements
 
-The detailed requirements of the project will be released after the course ends.
-
+The requirements can be found [here](https://github.com/nhthieu/dental-clinic-database/blob/main/docs/da3-overview.md).
 ## Overview
 
 The project focuses on the detailed design of a database with real-world requirements, the overall steps to be taken can be summarized as follows:
@@ -26,18 +20,31 @@ The project focuses on the detailed design of a database with real-world require
 - Conceptual design.
 - Logical design.
 - Physical implementation exclusively in MSSQL Server, this includes implementing the database, writing stored procedures, triggers, partitions, etc.
-- Optimizing, tuning and benchmarking performance.
+- Optimizing, tuning and/or benchmarking performance.
 
 All the schemas designed for the project will also be included in the repo. Moreover, the project also includes documents regarding these processes and will be updated as the project progresses.
 
 ## Tech stack
 
-This project will be built into a web application with the following tech stack (planning):
+The whole project is built into a web application with the following tech stack:
 
 - Database: MSSQL Server
 - Backend: Express, Prisma
 - Frontend: Ant Design Pro
 - API: Swagger, Postman
+
+## Script
+
+- All the scripts can be found in the `src` folder
+- Link for the .bak file: [Google Drive](https://drive.google.com/file/d/19hX4QG41Mtk_7PfUi3FokmyGdKGaU6ZM/view?usp=sharing)
+
+## Server
+
+The repo for the server can be found [here](https://github.com/nhthieu/dental-clinic-server)
+
+## Client
+
+The repo for the client can be found [here](https://github.com/nhthieu/dental-clinic-client)
 
 ## Contributions
 

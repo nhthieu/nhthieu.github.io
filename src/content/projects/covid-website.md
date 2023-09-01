@@ -3,7 +3,6 @@
   description: "A Covid-19 web application that helps healthcare providers manage patient data and related necessities."
   url: "https://github.com/namhoai1109/Covid-web"
   status: 'completed'
-  sortOrder: 3
   draft: false
 ---
 
