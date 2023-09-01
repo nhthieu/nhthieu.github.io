@@ -3,7 +3,6 @@
   description: "A simple Python application that can control target computer within the same network."
   url: "https://github.com/nhthieu/py-rus"
   status: 'completed'
-  sortOrder: 5
   draft: false
 ---
 
@@ -66,7 +65,7 @@ If run the *.exe* file, make sure to unblock the file in the properties.
 
 ## Demo
 
-[Click here to watch the demo.](https://github-production-user-asset-6210df.s3.amazonaws.com/74890715/249337115-bba24bb9-7e10-43a7-84d2-f3afc3b3e372.mp4)
+You can watch the demo [here](https://github-production-user-asset-6210df.s3.amazonaws.com/74890715/249337115-bba24bb9-7e10-43a7-84d2-f3afc3b3e372.mp4).
 
 ## Contributions
 

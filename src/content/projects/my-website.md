@@ -3,7 +3,6 @@
   description: "The website you're seeing right now."
   url: "https://github.com/nhthieu/my-portfolio"
   status: 'in-progress'
-  sortOrder: 1
   draft: false
 ---
 
@@ -17,9 +16,9 @@ I did write a [blog post](/blog/tech-stack) about the overview of the technical 
 - Preact
 - Tailwind
 
-## TODO
+<!-- ## TODO
 
 - [x] i18n support (temporary)
-- [ ] Pagination
+- [x] Pagination
 - [ ] Blog search
-- [x] Table of content
+- [x] Table of content -->

@@ -64,4 +64,4 @@ A good mechanical keyboard + a good pair of headphones + a good monitor = a happ
 
 ### What are you learning at the moment?
 
-Backend development, database modeling and design, and [Rust](https://www.rust-lang.org/) in my free time. I'm also learning French for my upcoming DELF B2 exam in November.
+I'm relearning React for the internship. I'm also learning about databases and Rust in my free time.

@@ -3,7 +3,6 @@
   description: "Hanbai is an Android application that helps online merchants manage orders, customers list and products list."
   url: "https://github.com/Anhduy-git/Hanbai"
   status: 'completed'
-  sortOrder: 2
   draft: false
 ---
 
