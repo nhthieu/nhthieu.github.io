@@ -12,7 +12,7 @@ export async function getStaticPaths({ paginate }: any) {
 
   return paginate(
     posts.sort((a, b) => (a.data.publishDate < b.data.publishDate ? 1 : -1)),
-    { pageSize: 10 }
+    { pageSize: 10 },
   );
 }
 
@@ -21,10 +21,10 @@ const posts: CollectionEntry<"blog">[] = page.data;
 ---
 
 <MainLayout title="Hieu Nguyen - Blog">
-  <PageTitle
+  <!-- <PageTitle
     title="Blog"
     description="Where I write tech and non-tech related stories, ideas and insights."
-  />
+  /> -->
   <Pagination
     page={page.currentPage}
     prev={page.url.prev}
@@ -33,13 +33,10 @@ const posts: CollectionEntry<"blog">[] = page.data;
   <div>
     {posts.map((post) => <BlogItem post={post} />)}
   </div>
-  {
-    page.total >= 10 && (
-      <Pagination
-        page={page.currentPage}
-        prev={page.url.prev}
-        next={page.url.next}
-      />
-    )
-  }
+
+  <Pagination
+    page={page.currentPage}
+    prev={page.url.prev}
+    next={page.url.next}
+  />
 </MainLayout>
