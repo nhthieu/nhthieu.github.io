@@ -1,4 +1,0 @@
-- [x] i18n support (temporary)
-- [ ] Pagination
-- [ ] Blog search
-- [x] Table of content
