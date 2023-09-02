@@ -30,9 +30,15 @@ At the moment I'm an intern at [DevSamurai](https://devsamurai.vn/), a software 
 
 I play guitar and I'm a big fan of [this guy](https://www.youtube.com/@Mautaus), and this [band](https://www.youtube.com/@Polyphia)
 
-## Contact
+## Links
 
-I don't actively use social media, but I'm most responsive over [email](mailto:nhthieu16@proton.me). I also have a [Github account](https://github.com/nhthieu) and a [LinkedIn profile](https://www.linkedin.com/in/nhthieu16/).
+- Github: [nhthieu](https://github.com/nhthieu)
+- Email: [nhthieu16@proton.me](mailto:nhthieu16@proton.me)
+- LinkedIn: [nhthieu16](https://www.linkedin.com/in/nhthieu16/)
+- Twitter: [@tokioouu](https://twitter.com/tokioouu)
+<!-- - ReadCV: [nhthieu](https://read.cv/nhthieu) -->
+
+I don't actively use social media, so I'm not very active on Twitter. I do check my email regularly though, so feel free to contact me there.
 
 ## FAQ
 
