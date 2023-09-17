@@ -2,7 +2,6 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogItem from "@/components/BlogItem.astro";
-import PageTitle from "@/components/PageTitle.astro";
 import Pagination from "@/components/Pagination.astro";
 
 export async function getStaticPaths({ paginate }: any) {
@@ -21,10 +20,6 @@ const posts: CollectionEntry<"blog">[] = page.data;
 ---
 
 <MainLayout title="Hieu Nguyen - Blog">
-  <!-- <PageTitle
-    title="Blog"
-    description="Where I write tech and non-tech related stories, ideas and insights."
-  /> -->
   <Pagination
     page={page.currentPage}
     prev={page.url.prev}
