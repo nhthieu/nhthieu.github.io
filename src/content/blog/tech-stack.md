@@ -1,8 +1,6 @@
 ---
   title: "The Website Architecture"
-  description: "A brief overview of the website architecture"
   publishDate: "2023-05-27"
-  readingTime: 10
   tags: ['astro', 'preact', 'tailwindcss', 'typescript', 'firebase', 'design']
   previousPost: hello-friend
   nextPost: the-best-things

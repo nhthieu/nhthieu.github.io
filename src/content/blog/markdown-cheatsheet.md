@@ -1,8 +1,6 @@
 ---
   title: "Markdown Cheatsheet"
-  description: "A cheatsheet for markdown syntax, including extended syntax."
   publishDate: "2023-06-23"
-  readingTime: 2
   tags: ['markdown', 'syntax']
   previousPost: motherfucking-blog
   nextPost: i18n

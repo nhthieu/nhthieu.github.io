@@ -1,8 +1,6 @@
 ---
   title: "My first day as an intern"
-  description: "My first day as an intern at a company"
   publishDate: "2023-08-18"
-  readingTime: 3
   tags: ['intern', 'work', 'company']
   previousPost: a-love-letter-to-astro
   # nextPost: a-love-letter-to-astro
