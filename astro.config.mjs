@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { remarkReadingTime } from './remark-reading-time.mjs';
 import tailwind from "@astrojs/tailwind";
 import preact from "@astrojs/preact";
 
@@ -9,9 +10,8 @@ export default defineConfig({
     drafts: true,
     shikiConfig: {
       theme: 'material-theme-palenight',
-      // langs: ['javascript', 'typescript', 'css', 'html', 'json', 'bash', 'markdown', 'rust', 'toml', 'yaml'],
-      // wrap: true,
     },
+    remarkPlugins: [remarkReadingTime],
   },
   experimental: {},
   integrations: [tailwind(), preact()]

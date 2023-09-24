@@ -1,8 +1,6 @@
 ---
   title: "A love letter to Astro"
-  description: "Reasons why I love Astro and why you should too"
   publishDate: "2023-08-11"
-  readingTime: 2
   tags: ['astro', 'static-site', 'content',]
   previousPost: deploy
   nextPost: first-day-intern

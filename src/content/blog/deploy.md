@@ -1,8 +1,6 @@
 ---
   title: "How I deployed to Github Pages"
-  description: "My implementation of a CI/CD pipeline to deploy my website"
   publishDate: "2023-08-05"
-  readingTime: 3
   tags: ['astro', 'github', 'github-actions', 'pnpm', 'ci/cd']
   previousPost: i-use-arch-btw
   nextPost: a-love-letter-to-astro

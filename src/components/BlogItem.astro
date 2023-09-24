@@ -5,17 +5,21 @@ import type { CollectionEntry } from "astro:content";
 type Props = {
   post: CollectionEntry<"blog">;
 };
-const { post }: Props = Astro.props;
+
+const { post: entry }: Props = Astro.props;
+const { remarkPluginFrontmatter } = await entry.render();
 ---
 
 <div class="mb-6 pb-1 border-b border-baseDark/25 dark:border-baseLight/25">
-  <a href=`/blog/${post.slug}` class="hover:opacity-75 leading-relaxed">
-    <h1 class="font-bold text-lg md:text-base">{post.data.title}</h1>
-    <div class="flex items-center space-x-2 text-dark/75 dark:text-light/75">
-      <p>{post.data.publishDate.toLocaleDateString()}</p>
+  <a href=`/blog/${entry.slug}` class="hover:opacity-75 leading-relaxed">
+    <h1 class="font-bold text-xl md:text-lg">{entry.data.title}</h1>
+    <p class="text-dark/75 dark:text-light/75 mb-2">{entry.data.description}</p>
+    <div class="flex items-center space-x-2 text-sm text-dark/50 dark:text-light/50">
+      <p>{entry.data.publishDate.toLocaleDateString()}</p>
       <p>•</p>
-      <p>{post.data.readingTime} min read</p>
+      <p>{remarkPluginFrontmatter.minutesRead}</p>
     </div>
+
     <!-- {
       post.data.tags && (
         <div class="flex mt-2 text-sm pb-1 w-full flex-wrap">
