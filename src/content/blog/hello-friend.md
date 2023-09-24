@@ -1,8 +1,6 @@
 ---
   title: "Hello, friend!"
-  description: "Some words sent from a friend"
   publishDate: "2023-05-16"
-  readingTime: 1
   tags: ['personal', 'random']
   nextPost: tech-stack
   draft: false

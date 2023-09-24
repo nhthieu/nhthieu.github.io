@@ -20,7 +20,7 @@ const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
 const previousPost =
   entry.data.previousPost && (await getEntry(entry.data.previousPost));
 const nextPost = entry.data.nextPost && (await getEntry(entry.data.nextPost));
-const { Content, headings } = await entry.render();
+const { Content, headings, remarkPluginFrontmatter } = await entry.render();
 ---
 
 <MainLayout title={`Hieu Nguyen - ${entry.data.title}`}>
@@ -29,9 +29,8 @@ const { Content, headings } = await entry.render();
     contentType="blog"
     author={entry.data.author}
     publishDate={entry.data.publishDate.toLocaleDateString()}
-    readingTime={entry.data.readingTime}
+    readingTime={remarkPluginFrontmatter.minutesRead}
   />
-
   <Article headings={headings}>
     <Content />
   </Article>

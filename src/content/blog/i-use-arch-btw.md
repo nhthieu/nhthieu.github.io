@@ -1,8 +1,6 @@
 ---
   title: "I use Arch btw"
-  description: "I use Arch btw"
   publishDate: "2023-07-15"
-  readingTime: 6
   tags: ['arch', 'linux', 'rice']
   previousPost: i18n
   nextPost: deploy

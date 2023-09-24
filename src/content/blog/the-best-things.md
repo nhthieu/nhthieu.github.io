@@ -1,8 +1,6 @@
 ---
   title: "Things I find beautiful"
-  description: "Things I find beautiful"
   publishDate: "2023-06-1"
-  readingTime: 1
   tags: ['personal', 'random']
   previousPost: tech-stack
   nextPost: motherfucking-blog
