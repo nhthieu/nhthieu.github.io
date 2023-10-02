@@ -24,16 +24,16 @@ module.exports = {
 				// codeTextDark: '#f1aa50',
 
 				// ayu
-				baseLight: '#fafafa',
+				baseLight: '#ffffff',
 				textLight: '#0f1419',
 				primaryLight: '#3873ad',
-				codeblockLight: '#21262d',
-				codeTextLight: '#e1e1db',
-				baseDark: '#0f1419',
+				codeblockLight: '#17191e',
+				codeTextLight: '#fafafa',
+				baseDark: '#0d0f14',
 				textDark: '#c5c5c5',
 				primaryDark: '#39afd7',
-				codeblockDark: '#191f26',
-				codeTextDark: '#ffb454',
+				codeblockDark: '#17191e',
+				codeTextDark: '#fafafa',
 			},
 			typography: ({theme}) => ({
 				DEFAULT: {
@@ -63,6 +63,12 @@ module.exports = {
 						// '.dark blockquote': {
 						// 	color: theme('colors.light'),
 						// },
+						'root:not(.dark) code:not(pre code)': {
+
+						},
+						'.dark code:not(pre code)': {
+							backgroundColor: '#343841'
+						},
 					}
 				},
 				dark: {

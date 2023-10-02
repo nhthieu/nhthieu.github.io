@@ -9,7 +9,7 @@ export default defineConfig({
   markdown: {
     drafts: true,
     shikiConfig: {
-      theme: 'material-theme-palenight',
+      theme: 'github-dark',
     },
     remarkPlugins: [remarkReadingTime],
   },

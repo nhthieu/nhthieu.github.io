@@ -9,7 +9,7 @@ const { project }: Props = Astro.props;
 
 <div class="mb-6 pb-1 border-b border-baseDark/25 dark:border-baseLight/25">
   <a href=`/projects/${project.slug}` class="hover:opacity-75 leading-relaxed">
-    <h1 class="font-bold text-lg md:text-base">{project.data.title}</h1>
+    <h1 class="font-bold text-xl md:text-lg">{project.data.title}</h1>
     <p class="text-textLight/90 dark:text-textDark/90">{project.data.description}</p>
   </a>
 </div>
