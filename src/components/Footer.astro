@@ -15,7 +15,7 @@ const { className }: Props = Astro.props;
   <div
     class=`${className} flex items-center justify-between md:flex-col md:space-y-3 md:text-xs`
   >
-    <div class="flex flex-col text-xs md:items-center">
+    <div class="flex flex-col md:items-center">
       <p>&copy; {date.getFullYear()} Hieu Nguyen | All Rights Reserved.</p>
       <p>
         Built with <a
@@ -26,17 +26,17 @@ const { className }: Props = Astro.props;
       </p>
     </div>
     <div id="socials" class="flex space-x-4 underline items-center">
-      <a target="_blank" href="https://www.linkedin.com/in/nhthieu16/">
-        <LinkedInIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
+      <!-- <a target="_blank" href="https://www.linkedin.com/in/nhthieu16/">
+        <LinkedInIcon className="fill-textLight/75 dark:fill-textDark/75 w-6" />
+      </a> -->
+      <a target="_blank" href="https://github.com/nhthieu" class="w-6 hover:opacity-50">
+        <GithubIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
       </a>
-      <a target="_blank" href="https://github.com/nhthieu">
-        <GithubIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
+      <a target="_blank" href="mailto:nhthieu16@proton.me" class="w-6 hover:opacity-50">
+        <MailIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
       </a>
-      <a target="_blank" href="mailto:nhthieu16@proton.me">
-        <MailIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
-      </a>
-      <a target="_blank" href="https://twitter.com/tokioouu">
-        <TwitterIcon className="fill-textLight/75 dark:fill-textDark/75 w-4" />
+      <a target="_blank" href="https://twitter.com/tokioouu" class="w-6 hover:opacity-50">
+        <TwitterIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
       </a>
     </div>
   </div>
