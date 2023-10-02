@@ -22,5 +22,5 @@ Team+ is a Confluence app that allows you to create polls, votes, surveys and co
 
 This is the project that I'm working on for the internship at [DevSamurai Vietnam](https://devsamurai.vn/). I work both on the frontend and the backend of the app. My main responsibility includes:
 
-- **Adding new features**: I'm adding a *Decision Wheel* poll where users can spin the wheel to get a random result. I'm also adding other features which are not yet released.
-- **Optimizing the performance of the app**: Refactor existing code to improve the performance of the app.
+- **Adding new features**: Add new features to the app based on the requirements from the product manager. Sometimes I like to roll out new features that I think would be useful for the app.
+- **Optimizing the performance of the app**: Refactor and fix existing code to improve the performance of the app.

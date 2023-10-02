@@ -12,17 +12,8 @@ const { headings, toc = true }: Props = Astro.props;
 
 <article
   id="article"
-  class="prose prose-base md:prose-sm dark:prose-invert text-textLight dark:text-textDark max-w-none prose-pre:!bg-codeblockLight dark:prose-pre:!bg-codeblockDark prose-code:bg-codeblockLight dark:prose-code:bg-codeblockDark prose-code:text-codeTextLight dark:prose-code:text-codeTextDark prose-hr:border-textLight/50 dark:prose-hr:border-textDark/50 prose-thead:border-textLight/50 prose-tr:border-textLight/50 dark:prose-thead:border-textDark/50 dark:prose-tr:border-textDark/50 prose-blockquote:border-baseDark/50 dark:prose-blockquote:border-baseLight/50 prose-a:text-primaryLight dark:prose-a:text-primaryDark prose-figcaption:text-center prose-figcaption:text-xs prose-img:mx-auto"
+  class="prose prose-base md:prose-sm dark:prose-invert text-textLight dark:text-textDark max-w-none prose-pre:border prose-pre:!bg-codeblockLight prose-pre:border-textLight dark:prose-pre:border-textDark/50 dark:prose-pre:!bg-codeblockDark prose-code:bg-codeblockLight dark:prose-code:bg-codeblockDark prose-code:text-codeTextLight dark:prose-code:text-codeTextDark prose-hr:border-textLight/50 dark:prose-hr:border-textDark/50 prose-thead:border-textLight/50 prose-tr:border-textLight/50 dark:prose-thead:border-textDark/50 dark:prose-tr:border-textDark/50 prose-blockquote:border-baseDark/50 dark:prose-blockquote:border-baseLight/50 prose-a:text-primaryLight dark:prose-a:text-primaryDark prose-figcaption:text-center prose-figcaption:text-xs prose-img:mx-auto"
 >
-  {toc && <TableOfContents headings={headings} className="" />}
+  {toc && <TableOfContents headings={headings} className="mb-12" />}
   <slot />
 </article>
-
-<!-- <script is:inline>
-window.addEventListener("DOMContentLoaded", function () {
-  var links = document.querySelectorAll("#article a");
-  links.forEach(function (link) {
-    link.setAttribute("target", "_blank");
-  });
-});
-</script> -->
