@@ -1,5 +1,5 @@
 ---
-import { GithubIcon, LinkedInIcon, MailIcon, TwitterIcon } from "./Icons";
+import { Github, Mail, Twitter } from "lucide-react";
 const date = new Date();
 
 type Props = {
@@ -10,7 +10,7 @@ const { className }: Props = Astro.props;
 ---
 
 <footer
-  class="w-full text-sm mt-12 py-6 text-textLight/75 dark:text-textDark/75 leading-relaxed border-t border-baseDark/10 dark:border-baseLight/10"
+  class="w-full text-sm mt-12 py-6 text-foreground/75 leading-relaxed border-t"
 >
   <div
     class=`${className} flex items-center justify-between md:flex-col md:space-y-3 md:text-xs`
@@ -19,24 +19,21 @@ const { className }: Props = Astro.props;
       <p>&copy; {date.getFullYear()} Hieu Nguyen | All Rights Reserved.</p>
       <p>
         Built with <a
-          class="hover:text-primaryLight dark:hover:text-primaryDark hover:underline"
+          class="hover:text-primary hover:underline"
           target="_blank"
           href="https://astro.build/">Astro</a
         >
       </p>
     </div>
     <div id="socials" class="flex space-x-4 underline items-center">
-      <!-- <a target="_blank" href="https://www.linkedin.com/in/nhthieu16/">
-        <LinkedInIcon className="fill-textLight/75 dark:fill-textDark/75 w-6" />
-      </a> -->
       <a target="_blank" href="https://github.com/nhthieu" class="w-6 hover:opacity-50">
-        <GithubIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
+        <Github />
       </a>
       <a target="_blank" href="mailto:nhthieu16@proton.me" class="w-6 hover:opacity-50">
-        <MailIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
+        <Mail />
       </a>
       <a target="_blank" href="https://twitter.com/tokioouu" class="w-6 hover:opacity-50">
-        <TwitterIcon className="fill-textLight/75 dark:fill-textDark/75 w-full" />
+        <Twitter />
       </a>
     </div>
   </div>
