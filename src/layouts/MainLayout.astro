@@ -4,6 +4,7 @@
 import "@fontsource/noto-sans";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import '@/styles/globals.css'
 
 type Props = {
   title: string;
@@ -48,7 +49,7 @@ const { title }: Props = Astro.props;
   </head>
 
   <body
-    class="bg-baseLight dark:bg-baseDark text-textLight dark:text-textDark text-base md:text-sm"
+    class="text-foreground text-base md:text-sm"
   >
     <Header className="max-w-3xl px-8 sm:px-6" />
     <div class="max-w-3xl mx-auto px-8 sm:px-6">

@@ -47,7 +47,7 @@ const { Content, headings, remarkPluginFrontmatter } = await entry.render();
   } -->
 
   <!-- related posts -->
-  <div class="flex w-full bg-baseDark/5 dark:bg-baseLight/5 rounded-md overflow-hidden mt-12">
+  <div class="flex w-full bg-secondary rounded-md overflow-hidden mt-12">
     <RelatedPost post={previousPost} />
     <RelatedPost post={nextPost} isPrevious={false} />
   </div>

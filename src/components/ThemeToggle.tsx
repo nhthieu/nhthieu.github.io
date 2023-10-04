@@ -1,14 +1,18 @@
-import { useEffect, useState } from 'preact/hooks';
-import { SunIcon, MoonIcon } from './Icons';
+import { useEffect, useState } from 'react';
+import { Moon, Sun } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 type Props = {}
 
 export default function ThemeToggle(props: Props) {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "dark");
   const [isMounted, setIsMounted] = useState(false);
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  }
 
   useEffect(() => {
     if (theme === "dark") {
@@ -28,11 +32,22 @@ export default function ThemeToggle(props: Props) {
   }
 
   return (
-    <button
-      onClick={toggleTheme}
-      aria-label="Toggle theme"
-      className="w-8 h-8 p-2 flex items-center justify-center rounded-lg bg-primaryLight dark:bg-primaryDark md:w-7 md:h-7 md:rounded-md hover:opacity-75">
-      {theme === "light" ? <MoonIcon className='w-full fill-baseLight' /> : <SunIcon className='w-full fill-baseDark' />}
-    </button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme("light")}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          Dark
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }
