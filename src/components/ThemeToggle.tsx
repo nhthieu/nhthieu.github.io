@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { SunIcon, MoonIcon } from './Icons';
 import { Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
