@@ -10,7 +10,7 @@ const { post: entry }: Props = Astro.props;
 const { remarkPluginFrontmatter } = await entry.render();
 ---
 
-<div class="mb-6 pb-1 border-b border-baseDark/25 dark:border-baseLight/25">
+<div class="mb-6 pb-1 border-b">
   <a href=`/blog/${entry.slug}` class="hover:opacity-75 leading-relaxed">
     <h1 class="font-bold text-xl md:text-lg">{entry.data.title}</h1>
     <div class="flex items-center space-x-2 text-textLight/75 dark:text-textDark/75">

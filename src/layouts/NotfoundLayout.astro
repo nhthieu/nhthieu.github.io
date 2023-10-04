@@ -2,6 +2,7 @@
 // import '@fontsource-variable/inter';
 // import '@fontsource/roboto';
 import "@fontsource/noto-sans";
+import '@/styles/globals.css'
 
 type Props = {
   title: string;
@@ -18,7 +19,7 @@ const { title }: Props = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="bg-baseLight dark:bg-baseDark text-textLight dark:text-textDark max-w-3xl mx-auto px-8 text-lg md:text-base sm:px-6"
+    class="max-w-3xl mx-auto px-8 text-lg md:text-base sm:px-6"
   >
     <!-- <Header /> -->
     <slot />

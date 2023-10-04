@@ -24,7 +24,7 @@ const completedProjects = renderProjects("completed");
     <h1 class="font-bold text-xl mb-4 md:text-lg">Current:</h1>
     {
       inProgressProjects.length === 0 ? (
-        <p class="text-textLight/75 dark:text-textDark/75">
+        <p class="text-foreground/75">
           No current projects.
         </p>
       ) : (
@@ -41,7 +41,7 @@ const completedProjects = renderProjects("completed");
     <h1 class="font-bold text-xl mb-4 md:text-lg">Past:</h1>
     {
       completedProjects.length === 0 ? (
-        <p class="text-textLight/75 dark:text-textDark/75">
+        <p class="text-foreground/75">
           No current projects.
         </p>
       ) : (

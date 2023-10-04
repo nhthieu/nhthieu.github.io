@@ -8,7 +8,7 @@ type Props = {
 const { post, isPrevious = true }: Props = Astro.props;
 ---
 
-<div class={`w-1/2 ${post && "hover:bg-baseDark/10 dark:hover:bg-baseLight/10"}`}>
+<div class={`w-1/2 ${post && "hover:bg-primary/10"}`}>
   {
     post && (
       <a
@@ -17,7 +17,7 @@ const { post, isPrevious = true }: Props = Astro.props;
           !isPrevious && "items-end"
         }`}
       >
-        <h1 class="font-light text-sm text-textLight/75 dark:text-textDark/75 md:text-xs">
+        <h1 class="font-light text-sm text-foreground/75 md:text-xs">
           {isPrevious ? <span>&#8636; Previous Post</span> : <span>Next Post &#8640;</span>}
         </h1>
         <h1 class={`hover:underline ${!isPrevious && "text-end"}`}>

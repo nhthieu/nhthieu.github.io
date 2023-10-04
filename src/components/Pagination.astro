@@ -9,14 +9,14 @@ const { page, prev, next }: Props = Astro.props;
 ---
 
 <div
-  class="w-full h-8 flex items-center mb-12 bg-primaryLight dark:bg-primaryDark text-baseLight dark:text-baseDark rounded-md overflow-hidden font-semibold text-sm sm:text-xs sm:h-6"
+  class="w-full h-8 flex items-center mb-12 bg-secondary rounded-md overflow-hidden font-semibold text-sm sm:text-xs sm:h-6"
 >
   <div class="w-20 h-full flex items-center justify-center">
     {
       prev && (
         <a
           href={prev}
-          class="w-full h-full flex items-center justify-center hover:bg-baseDark dark:hover:bg-baseLight transition-all duration-150 ease-in-out"
+          class="w-full h-full flex items-center justify-center hover:bg-primary/10 transition-all duration-150 ease-in-out"
         >
           <div>Prev</div>
         </a>
@@ -31,7 +31,7 @@ const { page, prev, next }: Props = Astro.props;
       next && (
         <a
           href={next}
-          class="w-full h-full flex items-center justify-center hover:bg-baseDark dark:hover:bg-baseLight transition-all duration-150 ease-in-out"
+          class="w-full h-full flex items-center justify-center hover:bg-primary/10 transition-all duration-150 ease-in-out"
         >
           <div>Next</div>
         </a>
