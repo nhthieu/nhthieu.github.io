@@ -34,7 +34,7 @@ I play guitar and I'm a big fan of [Mateus Asato](https://www.youtube.com/@Mauta
 
 - Github: [nhthieu](https://github.com/nhthieu)
 - Email: [nhthieu16@proton.me](mailto:nhthieu16@proton.me)
-- Twitter: [@tokioouu](https://twitter.com/tokioouu)
+- Twitter: [@tokioouu](https://twitter.com/pliryo)
 
 I don't actively use Twitter. I do check my email regularly though, so feel free to contact me there.
 
